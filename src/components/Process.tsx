@@ -12,16 +12,12 @@ export default function Process() {
   return (
     <section
       id="process"
-      className="relative bg-warm-black text-white overflow-hidden border-b border-white/5 custom-process-padding"
+      className="relative bg-warm-black text-white overflow-hidden border-b border-white/5 py-16 md:py-20 lg:py-28"
     >
       <div
-        className="max-w-[1440px] mx-auto relative z-10 w-full"
-        style={{
-          paddingLeft: "80px",
-          paddingRight: "48px",
-        }}
+        className="max-w-[1440px] mx-auto relative z-10 w-full px-12 md:px-16 lg:pl-20 lg:pr-12"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Column: Sticky Title Information */}
           <div className="lg:col-span-4 lg:sticky lg:top-32 h-fit">
             <motion.span
@@ -39,7 +35,7 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-heading text-3xl md:text-4xl lg:text-[42px] font-bold uppercase tracking-tight text-white leading-[1.15] max-w-sm"
+              className="font-heading text-2xl md:text-4xl lg:text-[42px] font-bold uppercase tracking-tight text-white leading-[1.15] max-w-sm"
             >
               {t.process.title}
             </motion.h2>
@@ -50,7 +46,7 @@ export default function Process() {
             {/* Timeline Line */}
             <div className="absolute left-[19px] md:left-[35px] top-6 bottom-6 w-[1px] bg-white/10" />
 
-            <div className="space-y-16 md:space-y-24 lg:space-y-28">
+            <div className="space-y-8 md:space-y-10 lg:space-y-14">
               {steps.map((step, index) => (
                 <motion.div
                   key={step.num}

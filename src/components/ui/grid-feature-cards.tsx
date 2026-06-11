@@ -15,7 +15,13 @@ export function FeatureCard({ feature, className, ...props }: FeatureCardPorps) 
 	const p = genDeterministicPattern(feature.title);
 
 	return (
-		<div className="relative overflow-hidden border border-dashed border-white/20 p-12 sm:p-14 md:p-16 lg:p-20 group hover:bg-white/[0.01] transition-colors min-h-[250px] flex flex-col justify-end" {...props}>
+		<div 
+			className={cn(
+				"relative overflow-hidden border border-dashed border-white/20 p-6 sm:p-10 md:p-12 lg:p-16 group hover:bg-white/[0.01] transition-colors min-h-[200px] md:min-h-[250px] flex flex-col justify-end",
+				className
+			)} 
+			{...props}
+		>
 			
 			{/* Hover Background Image with zoom and fade */}
 			{feature.image && (

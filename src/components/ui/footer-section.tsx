@@ -36,8 +36,7 @@ function Footerdemo() {
       </div>
 
       <div
-        className="max-w-[1440px] mx-auto w-full relative z-10"
-        style={{ paddingLeft: "80px", paddingRight: "48px" }}
+        className="max-w-[1440px] mx-auto w-full relative z-10 px-12 md:px-16 lg:pl-20 lg:pr-12"
       >
         {/* ——— Main 4-Column Grid ——— */}
         <div className="grid gap-12 gap-x-8 md:gap-x-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-12 mb-10">

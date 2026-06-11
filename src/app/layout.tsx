@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   description: "Архитектурное проектирование, дизайн интерьеров и реализация под ключ от Art Studio Sky. Проектируем пространства от идеи до документации в Бишкеке.",
 };
 
+import WhatsAppWidget from "@/components/WhatsAppWidget";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,6 +35,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <LanguageProvider>
           {children}
+          <WhatsAppWidget />
         </LanguageProvider>
       </body>
     </html>

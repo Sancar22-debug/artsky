@@ -1,3 +1,4 @@
+import Loader from "@/components/Loader";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import IdentityStrip from "@/components/IdentityStrip";
@@ -10,6 +11,7 @@ import { Footerdemo } from "@/components/ui/footer-section";
 export default function Home() {
   return (
     <>
+      <Loader />
       <Header />
       <Hero />
       <IdentityStrip />

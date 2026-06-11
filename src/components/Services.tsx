@@ -26,19 +26,15 @@ export default function Services() {
   return (
     <section 
       id="services" 
-      className="relative bg-warm-black text-white min-h-screen flex flex-col pt-36 lg:pt-48 pb-28 lg:pb-36 overflow-hidden"
+      className="relative bg-warm-black text-white flex flex-col pt-6 lg:pt-16 pb-6 lg:pb-12 overflow-hidden"
     >
       <div 
-        className="max-w-[1440px] mx-auto relative z-10 w-full"
-        style={{
-          paddingLeft: "80px",
-          paddingRight: "48px",
-        }}
+        className="max-w-[1440px] mx-auto relative z-10 w-full px-12 md:px-16 lg:pl-20 lg:pr-12"
       >
-        {/* Spacer to push title down */}
-        <div className="h-4 md:h-6 lg:h-8" />
 
-        <div className="flex flex-col items-start max-w-4xl">
+
+        {/* Title block - centered on mobile, left-aligned on desktop */}
+        <div className="flex flex-col items-center lg:items-start max-w-4xl lg:max-w-4xl mx-auto lg:mx-0">
           <motion.span 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +50,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="font-heading text-3xl md:text-4xl lg:text-[42px] font-bold uppercase tracking-tight text-white leading-[1.15] max-w-2xl"
+            className="font-heading text-2xl md:text-4xl lg:text-[42px] font-bold uppercase tracking-tight text-white leading-[1.15] max-w-2xl text-center lg:text-left"
           >
             {t.services.title}
           </motion.h2>
@@ -68,12 +64,13 @@ export default function Services() {
           whileInView={{ filter: 'blur(0px)', translateY: 0, opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3"
+          className="flex overflow-x-auto snap-x snap-mandatory scrollbar-none gap-4 pb-4 -mx-12 px-12 md:mx-0 md:px-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-2 lg:gap-3"
         >
           {services.map((feature, i) => (
             <FeatureCard 
               key={i} 
-              feature={feature} 
+              feature={feature}
+              className="min-w-[80vw] sm:min-w-[45vw] md:min-w-0 snap-center"
             />
           ))}
         </motion.div>
@@ -89,21 +86,14 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] font-bold border border-white/25 text-white hover:bg-white hover:text-warm-black hover:border-white transition-all duration-300 font-body rounded-none"
-            style={{
-              padding: "16px 36px",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center"
-            }}
+            className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] font-bold border border-white/25 text-white hover:bg-white hover:text-warm-black hover:border-white transition-all duration-300 font-body rounded-none py-4 px-9"
           >
             {t.services.btn}
             <ArrowUpRight className="w-3.5 h-3.5 stroke-[2]" />
           </motion.a>
         </div>
 
-        {/* Spacer to push button up from bottom */}
-        <div className="h-6 md:h-8 lg:h-10" />
+
       </div>
     </section>
   );

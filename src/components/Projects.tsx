@@ -66,21 +66,21 @@ export default function Projects() {
 
   const projects = [
     {
-      id: "prestige",
-      title: t.projects.list.prestige.title,
-      description: t.projects.list.prestige.description,
-      tags: t.projects.list.prestige.tags,
-      colSpan: "lg:col-span-7 h-[350px] md:h-[450px] lg:h-[550px]",
-      bg: "bg-[#3a3a3a]",
-    },
-    {
       id: "erkindik",
       title: t.projects.list.erkindik.title,
       description: t.projects.list.erkindik.description,
       tags: t.projects.list.erkindik.tags,
-      colSpan: "lg:col-span-5 h-[350px] md:h-[450px] lg:h-[550px]",
+      colSpan: "lg:col-span-7 h-[350px] md:h-[450px] lg:h-[550px]",
       bg: "bg-[#4a4a4a]",
       image: "/imgs/projects/erkindik/16.jpg",
+    },
+    {
+      id: "prestige",
+      title: t.projects.list.prestige.title,
+      description: t.projects.list.prestige.description,
+      tags: t.projects.list.prestige.tags,
+      colSpan: "lg:col-span-5 h-[350px] md:h-[450px] lg:h-[550px]",
+      bg: "bg-[#3a3a3a]",
     },
     {
       id: "entre",
@@ -127,17 +127,13 @@ export default function Projects() {
   return (
     <section 
       id="projects" 
-      className="relative bg-bg-beige text-warm-black min-h-screen overflow-hidden custom-projects-padding"
+      className="relative bg-bg-beige text-warm-black flex flex-col overflow-hidden py-10 md:py-16 lg:py-20"
     >
       <div 
-        className="max-w-[1440px] mx-auto relative z-10 w-full"
-        style={{
-          paddingLeft: "80px",
-          paddingRight: "48px",
-        }}
+        className="max-w-[1440px] mx-auto relative z-10 w-full px-12 md:px-16 lg:pl-20 lg:pr-12"
       >
-        {/* Section Heading — title only, no description */}
-        <div className="flex flex-col items-start max-w-2xl">
+        {/* Section Heading — centered on mobile, left on desktop */}
+        <div className="flex flex-col items-center lg:items-start max-w-2xl mx-auto lg:mx-0">
           <motion.span 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -152,25 +148,21 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-warm-black leading-[1.15] max-w-xl"
+            className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-warm-black leading-[1.15] max-w-xl text-center lg:text-left"
           >
             {t.projects.title}
           </motion.h2>
         </div>
 
         {/* Spacer between heading and grid */}
-        <div className="h-10 md:h-14 lg:h-18" />
+        <div className="h-6 md:h-10 lg:h-12" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-5">
+        <div className="flex overflow-x-auto lg:grid lg:grid-cols-12 gap-4 lg:gap-5 pb-4 snap-x snap-mandatory scrollbar-none -mx-12 px-12 lg:mx-0 lg:px-0">
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={project.id}
               onClick={() => handleProjectClick(project.id)}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: index * 0.08, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className={`relative overflow-hidden group rounded-none cursor-pointer ${project.colSpan}`}
+              className={`relative overflow-hidden group rounded-none cursor-pointer min-w-[85vw] sm:min-w-[50vw] lg:min-w-0 snap-center w-full lg:w-auto ${project.colSpan}`}
             >
               {/* Card Background Image or Solid Color */}
               {project.image ? (
@@ -190,7 +182,7 @@ export default function Projects() {
               )}
 
               {/* Text Over Image Content */}
-              <div className="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-10 lg:p-12 pl-16 md:pl-20 lg:pl-24">
+              <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 sm:p-10 lg:p-12 pl-8 sm:pl-20 lg:pl-24">
                 <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500 ease-[0.16, 1, 0.3, 1]">
                   {/* Tags in small uppercase */}
                   <span className="text-[10px] md:text-[11px] font-bold tracking-[0.25em] uppercase text-gold-accent mb-3 block">
@@ -208,12 +200,12 @@ export default function Projects() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Button Spacer — reduced */}
-        <div className="h-8 md:h-10" />
+        <div className="h-4 md:h-6" />
 
         {/* Watch All Projects Button */}
         <div className="flex justify-center">

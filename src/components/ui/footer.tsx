@@ -29,11 +29,7 @@ export function Footer({
   return (
     <footer className="bg-bg-beige text-warm-black border-t border-light-stone/50 shadow-sm custom-footer-padding">
       <div 
-        className="max-w-[1440px] mx-auto w-full"
-        style={{
-          paddingLeft: "80px",
-          paddingRight: "48px",
-        }}
+        className="max-w-[1440px] mx-auto w-full px-12 md:px-16 lg:pl-20 lg:pr-12"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
           {/* Left Column (span 5): Contacts, Map */}

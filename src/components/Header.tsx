@@ -45,11 +45,7 @@ export default function Header() {
         }}
       >
         <div 
-          className="max-w-[1440px] mx-auto flex items-center justify-between w-full"
-          style={{
-            paddingLeft: "80px",
-            paddingRight: "48px",
-          }}
+          className="max-w-[1440px] mx-auto flex items-center justify-between w-full px-12 md:px-16 lg:pl-20 lg:pr-12"
         >
           {/* Logo Container */}
           <a 
@@ -207,23 +203,55 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-40 bg-warm-black pt-24 px-8 flex flex-col justify-between pb-12 md:hidden"
+            className="fixed inset-0 z-[100] bg-warm-black flex flex-col justify-between p-6 pb-12 md:hidden"
           >
-            <div className="flex flex-col gap-6 border-t border-white/10 pt-8">
-              <nav className="flex flex-col gap-6">
+            {/* Header row in mobile menu */}
+            <div className="flex items-center justify-between w-full h-[40px]">
+              <a 
+                href="#" 
+                onClick={() => setMobileMenuOpen(false)}
+                style={{ 
+                  position: "relative", 
+                  height: "40px", 
+                  width: "53px", 
+                  display: "flex", 
+                  alignItems: "center" 
+                }}
+              >
+                <Image
+                  src="/imgs/logowhite.png"
+                  alt="ArtSky Logo"
+                  fill
+                  sizes="53px"
+                  className="object-contain object-left"
+                  priority
+                />
+              </a>
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 text-white hover:text-gold-accent transition-colors duration-300"
+                aria-label="Close menu"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+
+            {/* Navigation links centered vertically */}
+            <div className="flex flex-col gap-6 pt-4 flex-1 justify-center">
+              <nav className="flex flex-col gap-8">
                 {navItems.map((item, index) => {
                   const Icon = item.icon;
                   return (
                     <motion.a
-                      initial={{ opacity: 0, x: -10 }}
+                      initial={{ opacity: 0, x: -15 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.05, duration: 0.3 }}
+                      transition={{ delay: index * 0.08, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                       key={item.label}
                       href={item.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center text-sm uppercase tracking-widest font-semibold text-white hover:text-gold-accent transition-colors duration-300 font-body"
+                      className="flex items-center text-xl uppercase tracking-[0.2em] font-heading font-bold text-white hover:text-gold-accent transition-all duration-300"
                     >
-                      <Icon className="w-4 h-4 text-white/50" style={{ marginRight: "10px" }} />
+                      <Icon className="w-5 h-5 text-gold-accent/80" style={{ marginRight: "14px" }} />
                       {item.label}
                     </motion.a>
                   );
@@ -231,7 +259,8 @@ export default function Header() {
               </nav>
             </div>
 
-            <div className="flex flex-col gap-6">
+            {/* Bottom block for WhatsApp CTA and language selection */}
+            <div className="flex flex-col gap-6 mt-auto">
               <div className="h-[1px] bg-white/10 w-full" />
               <div className="flex items-center justify-between">
                 <a
@@ -239,14 +268,14 @@ export default function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-between text-xs uppercase tracking-widest font-bold px-5 py-3.5 border border-white/20 text-white hover:bg-white hover:text-primary-dark transition-all duration-300 font-body rounded-none text-center flex-1 mr-4"
+                  className="flex items-center justify-between text-[11px] uppercase tracking-[0.2em] font-bold px-6 py-4 border border-white/20 text-white hover:bg-white hover:text-primary-dark transition-all duration-300 font-body rounded-none text-center flex-1 mr-6"
                 >
                   {t.header.discuss}
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </a>
 
                 {/* Mobile Lang Stack */}
-                <div className="flex flex-col text-[9px] font-bold tracking-wider leading-none text-left font-body border-l border-white/10 pl-4" style={{ gap: "6px" }}>
+                <div className="flex flex-col text-[10.5px] font-bold tracking-wider leading-none text-left font-body border-l border-white/10 pl-6" style={{ gap: "8px" }}>
                   <span 
                     onClick={() => { setLanguage("ru"); setMobileMenuOpen(false); }}
                     className={`cursor-pointer transition-colors duration-300 ${language === "ru" ? "text-gold-accent" : "text-white/40"}`}
