@@ -1,0 +1,110 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { FeatureCard } from "@/components/ui/grid-feature-cards";
+import { useLanguage } from "@/lib/LanguageContext";
+
+const servicesImages = [
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+];
+
+export default function Services() {
+  const { t } = useLanguage();
+  const services = t.services.items.map((item, index) => ({
+    ...item,
+    image: servicesImages[index],
+  }));
+  return (
+    <section 
+      id="services" 
+      className="relative bg-warm-black text-white min-h-screen flex flex-col pt-36 lg:pt-48 pb-28 lg:pb-36 overflow-hidden"
+    >
+      <div 
+        className="max-w-[1440px] mx-auto relative z-10 w-full"
+        style={{
+          paddingLeft: "80px",
+          paddingRight: "48px",
+        }}
+      >
+        {/* Spacer to push title down */}
+        <div className="h-4 md:h-6 lg:h-8" />
+
+        <div className="flex flex-col items-start max-w-4xl">
+          <motion.span 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="text-[12px] md:text-[13px] font-bold tracking-[0.35em] uppercase text-gold-accent mb-6 block font-body"
+          >
+            {t.services.label}
+          </motion.span>
+          
+          <motion.h2 
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ delay: 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="font-heading text-3xl md:text-4xl lg:text-[42px] font-bold uppercase tracking-tight text-white leading-[1.15] max-w-2xl"
+          >
+            {t.services.title}
+          </motion.h2>
+        </div>
+ 
+        {/* Spacer between title and grid */}
+        <div className="h-6 md:h-10 lg:h-14" />
+ 
+        <motion.div
+          initial={{ filter: 'blur(4px)', translateY: -8, opacity: 0 }}
+          whileInView={{ filter: 'blur(0px)', translateY: 0, opacity: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3"
+        >
+          {services.map((feature, i) => (
+            <FeatureCard 
+              key={i} 
+              feature={feature} 
+            />
+          ))}
+        </motion.div>
+ 
+        {/* Spacer between grid and button */}
+        <div className="h-6 md:h-10 lg:h-14" />
+ 
+        {/* Contact Us CTA Button at the bottom */}
+        <div className="flex justify-center">
+          <motion.a
+            href="#contacts"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] font-bold border border-white/25 text-white hover:bg-white hover:text-warm-black hover:border-white transition-all duration-300 font-body rounded-none"
+            style={{
+              padding: "16px 36px",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
+            {t.services.btn}
+            <ArrowUpRight className="w-3.5 h-3.5 stroke-[2]" />
+          </motion.a>
+        </div>
+
+        {/* Spacer to push button up from bottom */}
+        <div className="h-6 md:h-8 lg:h-10" />
+      </div>
+    </section>
+  );
+}
