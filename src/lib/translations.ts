@@ -104,59 +104,254 @@ export const translations = {
             scope: "Архитектурная концепция, проектирование фасадов, 3D-визуализация",
             year: "2026"
           },
-          longDescription: "Современный жилой комплекс премиум-класса, расположенный на бульваре Эркиндик в самом центре Бишкека. Проект объединяет строгость классических пропорций, современные фасадные решения и функциональные планировочные концепции. Особое внимание уделено интеграции здания в историческую зеленую зону города, использованию натурального камня (травертин, гранит), панорамному остеклению и созданию благоустроенных общественных террас."
+          longDescription: "Современный жилой комплекс премиум-класса в центре Бишкека. Проект объединяет классические пропорции и современные решения."
         },
         prestige: {
           title: "Prestige Hall",
-          description: "Дизайн-проект квартиры 240 м² в клубном доме Prestige Hall.",
-          tags: ["Интерьер", "Премиум", "3D"],
+          description: "Дизайн квартиры в премиальном жилом комплексе Prestige Hall.",
+          tags: ["Интерьер", "Премиум"],
           details: {
             location: "г. Бишкек",
             type: "Жилой интерьер",
-            area: "240 м²",
-            scope: "Дизайн-проект интерьера, комплектация, авторский надзор",
+            area: "280 м²",
+            scope: "Дизайн-проект интерьера квартиры",
             year: "2025"
           },
-          longDescription: "Дизайн-проект интерьера просторной квартиры площадью 240 м² в элитном клубном доме Prestige Hall. Дизайн решен в стиле современного минимализма с элементами теплого контемпорари. Использование благородных материалов — натурального мрамора, дерева ореха, латуни и текстиля букле — позволило создать статусное, но уютное пространство."
+          longDescription: "Дизайн-проект интерьера просторной квартиры площадью 280 м² в премиальном жилом комплексе Prestige Hall. Стиль современного минимализма с использованием благородных материалов — натуральный мрамор, дерево, латунь и текстиль. Стадия: завершён."
         },
-        entre: {
-          title: "Студия балета «Антре»",
-          description: "Коммерческое пространство для творческой среды.",
+        predgorniy_apartments: {
+          title: "Квартиры в ЖК «Предгорный»",
+          description: "Дизайн-проект квартир в премиальном жилом комплексе.",
+          tags: ["Интерьер", "Жилой комплекс"],
+          details: {
+            location: "г. Бишкек",
+            type: "Жилые интерьеры",
+            area: "104 / 70 / 80 / 227,5 м²",
+            scope: "Дизайн-проект 4 квартир",
+            year: "2025"
+          },
+          longDescription: "Комплексный дизайн-проект четырёх квартир различной площади в премиальном ЖК «Предгорный»: квартира 1 — 104 м², квартира 2 — 70 м², квартира 3 — 80 м², квартира 4 — 227,5 м². Стадия: строительство."
+        },
+        predgorniy: {
+          title: "ЖК «Предгорный»",
+          description: "Архитектурный проект премиального жилого комплекса.",
+          tags: ["Архитектура", "Жилой комплекс"],
+          details: {
+            location: "г. Бишкек",
+            type: "Жилой комплекс премиум-класса",
+            area: "—",
+            scope: "Архитектурный проект, фасады, автопаркинг",
+            year: "2023"
+          },
+          longDescription: "Архитектурный проект премиального жилого комплекса «Предгорный» с автопаркингом на собственной территории в г. Бишкек. Стадия: строится."
+        },
+        ordo: {
+          title: "Дом в ЖГ «Ордо»",
+          description: "Дизайн-проект дома в жилом городке Ордо.",
+          tags: ["Интерьер", "Частный дом"],
+          details: {
+            location: "г. Бишкек, ЖГ Ордо",
+            type: "Частный жилой дом",
+            area: "195 м²",
+            scope: "Дизайн-проект интерьера дома",
+            year: "2025"
+          },
+          longDescription: "Дизайн-проект частного дома площадью 195 м² в жилом городке «Ордо» в г. Бишкек. Стадия: завершён 2026 г."
+        },
+        abdymomunova: {
+          title: "Отель Абдымомунова 286",
+          description: "Архитектурный проект отеля в центре Бишкека.",
+          tags: ["Архитектура", "Коммерческий объект"],
+          details: {
+            location: "г. Бишкек, ул. Абдымомунова 286",
+            type: "Отель",
+            area: "—",
+            scope: "Архитектурный проект, фасады, интерьер",
+            year: "2021"
+          },
+          longDescription: "Архитектурный проект отеля по адресу Абдымомунова 286, г. Бишкек. Стадия: строится."
+        },
+        orion: {
+          title: "ЖК «Орион»",
+          description: "Архитектурный проект жилого комплекса.",
+          tags: ["Архитектура", "Жилой комплекс"],
+          details: {
+            location: "г. Бишкек",
+            type: "Жилой комплекс",
+            area: "—",
+            scope: "Архитектурный проект",
+            year: "2025"
+          },
+          longDescription: "Архитектурный проект жилого комплекса «Орион» в г. Бишкек. Стадия: строится."
+        },
+        alaarcha: {
+          title: "Пентхаус в ЖК «Ала-Арча»",
+          description: "Дизайн-проект пентхауса в премиальном жилом комплексе.",
+          tags: ["Интерьер", "Премиум"],
+          details: {
+            location: "г. Бишкек",
+            type: "Пентхаус",
+            area: "400 м²",
+            scope: "Дизайн-проект интерьера пентхауса",
+            year: "2024"
+          },
+          longDescription: "Дизайн-проект пентхауса площадью 400 м² в жилом комплексе «Ала-Арча», г. Бишкек. Стадия: строится."
+        },
+        globalmed: {
+          title: "Мед центр «Global Med»",
+          description: "Дизайн-проект медицинского центра.",
           tags: ["Интерьер", "Коммерческий объект"],
           details: {
             location: "г. Бишкек",
-            type: "Коммерческий интерьер",
-            area: "320 м²",
-            scope: "Дизайн-проект, планировочные решения, подбор материалов",
-            year: "2025"
+            type: "Медицинский центр",
+            area: "—",
+            scope: "Дизайн-проект интерьера",
+            year: "—"
           },
-          longDescription: "Проектирование коммерческого интерьера для балетной студии «Антре». В основе концепции лежит воздушность, обилие естественного света и использование экологичных износостойких материалов. Залы оборудованы профессиональным амортизирующим напольным покрытием и балетными станками индивидуального изготовления."
+          longDescription: "Дизайн-проект интерьера медицинского центра «Global Med» в г. Бишкек."
         },
-        hydepark: {
-          title: "HYDE PARK",
-          description: "Проект для центра отдыха.",
-          tags: ["Архитектура", "Зона отдыха"],
-          details: {
-            location: "Чуйская область",
-            type: "Зона отдыха / HoReCa",
-            area: "1.2 га",
-            scope: "Генеральный план, архитектурное проектирование, ландшафтный дизайн",
-            year: "2024"
-          },
-          longDescription: "Архитектурная концепция загородной зоны отдыха и спа-комплекса. Проект разрабатывался с учетом природного рельефа местности, здания ориентированы на панорамные виды гор. Концепция предусматривает деревянные и каменные фасады в стиле эко-минимализма, гармонично вписанные в окружающий ландшафт."
-        },
-        alaarcha: {
-          title: "Клубный дом «Ала-Арча»",
-          description: "Проект объекта клубного формата.",
-          tags: ["Архитектура", "Премиум"],
+        mossovet: {
+          title: "БЦ «Моссовет»",
+          description: "Дизайн и ландшафт входной зоны бизнес-центра.",
+          tags: ["Ландшафт", "Коммерческий объект"],
           details: {
             location: "г. Бишкек",
-            type: "Клубный жилой дом",
-            area: "4 200 м²",
-            scope: "Архитектурная концепция, фасады, ландшафт",
-            year: "2025"
+            type: "Бизнес-центр",
+            area: "—",
+            scope: "Дизайн и ландшафт входной зоны",
+            year: "—"
           },
-          longDescription: "Элитный клубный дом малоэтажной застройки в экологически чистом районе города. Архитектура объединяет элементы альпийского шале и современного европейского минимализма. Большие площади остекления, просторные террасы и закрытый благоустроенный двор делают этот проект уникальным примером комфортной загородной жизни."
+          longDescription: "Дизайн-проект и ландшафтное оформление входной зоны бизнес-центра «Моссовет». Завершён."
+        },
+        usenbaeva: {
+          title: "Усенбаева 58",
+          description: "Архитектурный проект жилого дома.",
+          tags: ["Архитектура", "Жилой дом"],
+          details: {
+            location: "г. Бишкек, ул. Усенбаева 58",
+            type: "Жилой дом",
+            area: "—",
+            scope: "Архитектурный проект",
+            year: "2021"
+          },
+          longDescription: "Архитектурный проект жилого дома по адресу Усенбаева 58, г. Бишкек. Стадия: завершения."
+        },
+        wellness: {
+          title: "Оздоровительный центр",
+          description: "Архитектурный проект 3-этажного оздоровительного центра.",
+          tags: ["Архитектура", "Коммерческий объект"],
+          details: {
+            location: "г. Бишкек",
+            type: "Оздоровительный центр",
+            area: "—",
+            scope: "Архитектурный проект, кофейня, автопаркинг",
+            year: "—"
+          },
+          longDescription: "Архитектурный проект 3-этажного оздоровительного центра с кофейней и автопаркингом на собственной территории. Завершён."
+        },
+        turkish_airlines: {
+          title: "Turkish Airlines, Аэропорт Манас",
+          description: "Дизайн-проект офиса авиакомпании в аэропорту.",
+          tags: ["Интерьер", "Коммерческий объект"],
+          details: {
+            location: "Аэропорт Манас, г. Бишкек",
+            type: "Офис авиакомпании",
+            area: "—",
+            scope: "Дизайн-проект интерьера офиса",
+            year: "2023"
+          },
+          longDescription: "Дизайн-проект офиса авиакомпании Turkish Airlines в аэропорту Манас, г. Бишкек. Завершён."
+        },
+        private_house: {
+          title: "Жилой дом 350 м²",
+          description: "Дизайн-проект индивидуального жилого дома.",
+          tags: ["Интерьер", "Частный дом"],
+          details: {
+            location: "г. Бишкек",
+            type: "Частный жилой дом",
+            area: "350 м²",
+            scope: "Дизайн-проект интерьера",
+            year: "2023"
+          },
+          longDescription: "Дизайн-проект индивидуального жилого дома площадью 350 м² в г. Бишкек. Завершён."
+        },
+        medikon: {
+          title: "Медикон",
+          description: "Архитектурный проект и дизайн интерьера стоматологической клиники полного цикла «Медикон».",
+          tags: ["Архитектура", "Интерьер", "Коммерческий объект"],
+          details: {
+            location: "г. Бишкек",
+            type: "Стоматологическая клиника",
+            area: "—",
+            scope: "Архитектура и дизайн интерьера",
+            year: "—"
+          },
+          longDescription: "Архитектурный проект и дизайн-проект интерьера стоматологической клиники полного цикла «Медикон» в г. Бишкек. Завершён."
+        },
+        o2_office: {
+          title: "Офис СК «О2»",
+          description: "Дизайн-проект офиса строительной компании.",
+          tags: ["Интерьер", "Коммерческий объект"],
+          details: {
+            location: "г. Бишкек",
+            type: "Офис",
+            area: "—",
+            scope: "Дизайн-проект интерьера офиса",
+            year: "—"
+          },
+          longDescription: "Дизайн-проект офиса строительной компании «О2» в г. Бишкек. Завершён."
+        },
+        prestige_entrance: {
+          title: "Подъезд ЖК «Prestige Hall»",
+          description: "Дизайн-проект подъезда премиального жилого комплекса.",
+          tags: ["Интерьер", "Жилой комплекс"],
+          details: {
+            location: "г. Бишкек",
+            type: "Подъезд жилого комплекса",
+            area: "—",
+            scope: "Дизайн-проект подъезда",
+            year: "—"
+          },
+          longDescription: "Дизайн-проект подъезда премиального жилого комплекса Prestige Hall. Завершён."
+        },
+        keshte: {
+          title: "Бутик «KESHTE»",
+          description: "Дизайн-проект бутика национальной одежды.",
+          tags: ["Интерьер", "Коммерческий объект"],
+          details: {
+            location: "г. Бишкек",
+            type: "Бутик",
+            area: "—",
+            scope: "Дизайн-проект интерьера бутика",
+            year: "—"
+          },
+          longDescription: "Дизайн-проект бутика национальной одежды «KESHTE» в г. Бишкек. Завершён."
+        },
+        restaurant: {
+          title: "Заведение",
+          description: "Дизайн-проект заведения.",
+          tags: ["Интерьер", "HoReCa"],
+          details: {
+            location: "г. Бишкек",
+            type: "Заведение",
+            area: "—",
+            scope: "Дизайн-проект интерьера",
+            year: "2026"
+          },
+          longDescription: "Дизайн-проект заведения в г. Бишкек. В ходе реализации."
+        },
+        orenburgskaya: {
+          title: "Дом на ул. Оренбургская",
+          description: "Дизайн-проект индивидуального жилого дома.",
+          tags: ["Интерьер", "Частный дом"],
+          details: {
+            location: "г. Бишкек, ул. Оренбургская",
+            type: "Частный жилой дом",
+            area: "—",
+            scope: "Дизайн-проект интерьера дома",
+            year: "2024"
+          },
+          longDescription: "Дизайн-проект индивидуального жилого дома по ул. Оренбургская, г. Бишкек. Завершён."
         }
       }
     },
@@ -314,59 +509,254 @@ export const translations = {
             scope: "Architectural concept, facade design, 3D visualization",
             year: "2026"
           },
-          longDescription: "A modern premium residential complex located on Erkindik Boulevard in the heart of Bishkek. The project combines classic proportions, modern facade solutions, and functional layout concepts. Special attention is paid to integrating the building into the historical green zone of the city, using natural stone (travertine, granite), panoramic glazing, and creating landscaped public terraces."
+          longDescription: "A modern premium residential complex in the heart of Bishkek. The project combines classic proportions and modern facade solutions."
         },
         prestige: {
           title: "Prestige Hall",
-          description: "Interior design project of a 240 m² apartment in the Prestige Hall clubhouse.",
-          tags: ["Interior", "Premium", "3D"],
+          description: "Interior design of a 280 m² apartment in premium residential complex Prestige Hall.",
+          tags: ["Interior", "Premium"],
           details: {
             location: "Bishkek",
             type: "Residential Interior",
-            area: "240 m²",
-            scope: "Interior design, furnishing, site supervision",
+            area: "280 m²",
+            scope: "Apartment interior design",
             year: "2025"
           },
-          longDescription: "Interior design project of a spacious 240 m² apartment in the luxury club house Prestige Hall. The design is executed in modern minimalism style with elements of warm contemporary. The use of noble materials — natural marble, walnut wood, brass, and bouclé textiles — created a prestigious yet cozy atmosphere."
+          longDescription: "Interior design of a spacious 280 m² apartment in the premium residential complex Prestige Hall. Modern minimalism style with noble materials — natural marble, wood, brass, and textiles. Stage: completed."
         },
-        entre: {
-          title: "Ballet Studio \"Entre\"",
-          description: "Commercial space for a creative environment.",
-          tags: ["Interior", "Commercial Object"],
+        predgorniy_apartments: {
+          title: "Apartments in RC \"Predgorniy\"",
+          description: "Interior design of apartments in premium residential complex.",
+          tags: ["Interior", "Residential Complex"],
           details: {
             location: "Bishkek",
-            type: "Commercial Interior",
-            area: "320 m²",
-            scope: "Interior design, space planning, material selection",
+            type: "Residential Interiors",
+            area: "104 / 70 / 80 / 227.5 m²",
+            scope: "Interior design of 4 apartments",
             year: "2025"
           },
-          longDescription: "Commercial interior design for the 'Entre' ballet studio. The core concept is airiness, abundance of natural light, and the use of eco-friendly, durable materials. The studios are equipped with professional shock-absorbing flooring and custom-made ballet barres."
+          longDescription: "Comprehensive interior design of four apartments of various sizes in the premium RC Predgorniy: apartment 1 — 104 m², apartment 2 — 70 m², apartment 3 — 80 m², apartment 4 — 227.5 m². Stage: under construction."
         },
-        hydepark: {
-          title: "HYDE PARK",
-          description: "Project for a recreation center.",
-          tags: ["Architecture", "Recreation Area"],
+        predgorniy: {
+          title: "RC \"Predgorniy\"",
+          description: "Architectural design of a premium residential complex.",
+          tags: ["Architecture", "Residential Complex"],
           details: {
-            location: "Chuy Region",
-            type: "Recreation Area / HoReCa",
-            area: "1.2 ha",
-            scope: "Master plan, architectural design, landscape design",
-            year: "2024"
+            location: "Bishkek",
+            type: "Premium Residential Complex",
+            area: "—",
+            scope: "Architectural design, facades, parking",
+            year: "2023"
           },
-          longDescription: "Architectural concept of a countryside recreation area and spa complex. Designed with the natural topography in mind, the buildings are oriented towards panoramic mountain views. The concept features wood and stone facades in eco-minimalism style, harmoniously blending into the surrounding landscape."
+          longDescription: "Architectural design of the premium residential complex Predgorniy with private parking on its own territory in Bishkek. Stage: under construction."
+        },
+        ordo: {
+          title: "House in Ordo",
+          description: "Interior design of a house in Ordo residential town.",
+          tags: ["Interior", "Private House"],
+          details: {
+            location: "Bishkek, Ordo Residential Town",
+            type: "Private Residential House",
+            area: "195 m²",
+            scope: "House interior design",
+            year: "2025"
+          },
+          longDescription: "Interior design of a 195 m² private house in Ordo residential town, Bishkek. Stage: completed 2026."
+        },
+        abdymomunova: {
+          title: "Hotel Abdymomunova 286",
+          description: "Architectural design of a hotel in central Bishkek.",
+          tags: ["Architecture", "Commercial"],
+          details: {
+            location: "Bishkek, 286 Abdymomunova St",
+            type: "Hotel",
+            area: "—",
+            scope: "Architectural design, facades, interior",
+            year: "2021"
+          },
+          longDescription: "Architectural design of a hotel at 286 Abdymomunova St, Bishkek. Stage: under construction."
+        },
+        orion: {
+          title: "RC \"Orion\"",
+          description: "Architectural design of a residential complex.",
+          tags: ["Architecture", "Residential Complex"],
+          details: {
+            location: "Bishkek",
+            type: "Residential Complex",
+            area: "—",
+            scope: "Architectural design",
+            year: "2025"
+          },
+          longDescription: "Architectural design of the Orion residential complex in Bishkek. Stage: under construction."
         },
         alaarcha: {
-          title: "Clubhouse \"Ala-Archa\"",
-          description: "Project of a club-format residential building.",
-          tags: ["Architecture", "Premium"],
+          title: "Penthouse in RC \"Ala-Archa\"",
+          description: "Interior design of a penthouse in a premium residential complex.",
+          tags: ["Interior", "Premium"],
           details: {
             location: "Bishkek",
-            type: "Club Residential House",
-            area: "4,200 m²",
-            scope: "Architectural concept, facades, landscape design",
-            year: "2025"
+            type: "Penthouse",
+            area: "400 m²",
+            scope: "Penthouse interior design",
+            year: "2024"
           },
-          longDescription: "A luxury low-rise clubhouse in an environmentally pristine area of the city. The architecture combines elements of an Alpine chalet and modern European minimalism. Large glazing areas, spacious terraces, and a private landscaped courtyard make this project a unique example of comfortable suburban living."
+          longDescription: "Interior design of a 400 m² penthouse in the Ala-Archa residential complex, Bishkek. Stage: under construction."
+        },
+        globalmed: {
+          title: "Medical Center \"Global Med\"",
+          description: "Interior design of a medical center.",
+          tags: ["Interior", "Commercial"],
+          details: {
+            location: "Bishkek",
+            type: "Medical Center",
+            area: "—",
+            scope: "Interior design",
+            year: "—"
+          },
+          longDescription: "Interior design of the Global Med medical center in Bishkek."
+        },
+        mossovet: {
+          title: "BC \"Mossovet\"",
+          description: "Design and landscape of a business center entrance.",
+          tags: ["Landscape", "Commercial"],
+          details: {
+            location: "Bishkek",
+            type: "Business Center",
+            area: "—",
+            scope: "Entrance zone design and landscaping",
+            year: "—"
+          },
+          longDescription: "Design and landscape of the entrance zone of the Mossovet business center. Completed."
+        },
+        usenbaeva: {
+          title: "Usenbaeva 58",
+          description: "Architectural design of a residential building.",
+          tags: ["Architecture", "Residential"],
+          details: {
+            location: "Bishkek, 58 Usenbaeva St",
+            type: "Residential Building",
+            area: "—",
+            scope: "Architectural design",
+            year: "2021"
+          },
+          longDescription: "Architectural design of a residential building at 58 Usenbaeva St, Bishkek. Stage: completion."
+        },
+        wellness: {
+          title: "Wellness Center",
+          description: "Architectural design of a 3-story wellness center.",
+          tags: ["Architecture", "Commercial"],
+          details: {
+            location: "Bishkek",
+            type: "Wellness Center",
+            area: "—",
+            scope: "Architectural design, café, parking",
+            year: "—"
+          },
+          longDescription: "Architectural design of a 3-story wellness center with a café and private parking. Completed."
+        },
+        turkish_airlines: {
+          title: "Turkish Airlines, Manas Airport",
+          description: "Interior design of an airline office at the airport.",
+          tags: ["Interior", "Commercial"],
+          details: {
+            location: "Manas Airport, Bishkek",
+            type: "Airline Office",
+            area: "—",
+            scope: "Office interior design",
+            year: "2023"
+          },
+          longDescription: "Interior design of the Turkish Airlines office at Manas Airport, Bishkek. Completed."
+        },
+        private_house: {
+          title: "Private House 350 m²",
+          description: "Interior design of a private residential house.",
+          tags: ["Interior", "Private House"],
+          details: {
+            location: "Bishkek",
+            type: "Private Residential House",
+            area: "350 m²",
+            scope: "Interior design",
+            year: "2023"
+          },
+          longDescription: "Interior design of a 350 m² private residential house in Bishkek. Completed."
+        },
+        medikon: {
+          title: "Clinic \"Medikon\"",
+          description: "Architectural and interior design of a full-cycle dental clinic.",
+          tags: ["Architecture", "Interior", "Commercial"],
+          details: {
+            location: "Bishkek",
+            type: "Dental Clinic",
+            area: "—",
+            scope: "Architecture and interior design",
+            year: "—"
+          },
+          longDescription: "Architectural design and interior design of the Medikon full-cycle dental clinic. Completed."
+        },
+        o2_office: {
+          title: "O2 Construction Office",
+          description: "Interior design of a construction company office.",
+          tags: ["Interior", "Commercial"],
+          details: {
+            location: "Bishkek",
+            type: "Office",
+            area: "—",
+            scope: "Office interior design",
+            year: "—"
+          },
+          longDescription: "Interior design of the O2 construction company office in Bishkek. Completed."
+        },
+        prestige_entrance: {
+          title: "Prestige Hall Lobby",
+          description: "Lobby design of a premium residential complex.",
+          tags: ["Interior", "Residential Complex"],
+          details: {
+            location: "Bishkek",
+            type: "Residential Complex Lobby",
+            area: "—",
+            scope: "Lobby design",
+            year: "—"
+          },
+          longDescription: "Lobby design of the premium residential complex Prestige Hall. Completed."
+        },
+        keshte: {
+          title: "Boutique \"KESHTE\"",
+          description: "Interior design of a national clothing boutique.",
+          tags: ["Interior", "Commercial"],
+          details: {
+            location: "Bishkek",
+            type: "Boutique",
+            area: "—",
+            scope: "Boutique interior design",
+            year: "—"
+          },
+          longDescription: "Interior design of the KESHTE national clothing boutique in Bishkek. Completed."
+        },
+        restaurant: {
+          title: "Restaurant",
+          description: "Interior design of a dining venue.",
+          tags: ["Interior", "HoReCa"],
+          details: {
+            location: "Bishkek",
+            type: "Restaurant",
+            area: "—",
+            scope: "Interior design",
+            year: "2026"
+          },
+          longDescription: "Interior design of a dining venue in Bishkek. In progress."
+        },
+        orenburgskaya: {
+          title: "House on Orenburgskaya St",
+          description: "Interior design of a private residential house.",
+          tags: ["Interior", "Private House"],
+          details: {
+            location: "Bishkek, Orenburgskaya St",
+            type: "Private Residential House",
+            area: "—",
+            scope: "House interior design",
+            year: "2024"
+          },
+          longDescription: "Interior design of a private residential house on Orenburgskaya St, Bishkek. Completed."
         }
       }
     },

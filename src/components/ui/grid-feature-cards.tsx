@@ -17,7 +17,7 @@ export function FeatureCard({ feature, className, ...props }: FeatureCardPorps) 
 	return (
 		<div 
 			className={cn(
-				"relative overflow-hidden border border-dashed border-white/20 p-6 sm:p-10 md:p-12 lg:p-16 group hover:bg-white/[0.01] transition-colors min-h-[200px] md:min-h-[250px] flex flex-col justify-end",
+				"relative overflow-hidden border border-dashed border-white/20 p-5 sm:p-6 md:p-8 lg:p-10 group hover:bg-white/[0.01] transition-colors min-h-[160px] md:min-h-[200px] flex flex-col justify-end",
 				className
 			)} 
 			{...props}

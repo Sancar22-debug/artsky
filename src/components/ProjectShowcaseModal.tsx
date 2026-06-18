@@ -32,6 +32,7 @@ interface ProjectShowcaseModalProps {
 export default function ProjectShowcaseModal({ isOpen, onClose, project }: ProjectShowcaseModalProps) {
   const { t } = useLanguage();
   const [localProject, setLocalProject] = useState<ProjectData | null>(null);
+  const [fullScreenImage, setFullScreenImage] = useState<string | null>(null);
 
   // Keep a local copy of the project data so it remains visible during the exit animation
   useEffect(() => {
@@ -42,7 +43,7 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
 
   // Lock body scroll when modal is open
   useEffect(() => {
-    if (isOpen) {
+    if (isOpen || fullScreenImage) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
@@ -50,7 +51,7 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
     return () => {
       document.body.style.overflow = "unset";
     };
-  }, [isOpen]);
+  }, [isOpen, fullScreenImage]);
 
   const images = localProject?.images || [];
 
@@ -77,27 +78,24 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
             </button>
 
             {/* Left Column: Image Gallery (65% width on desktop, scrolls independently) */}
-            <div className="w-full lg:w-[65%] h-[50vh] lg:h-full overflow-y-auto flex flex-col gap-6 p-6 lg:p-12 pb-16 lg:pb-16 order-2 lg:order-1 bg-warm-black scrollbar-thin">
+            <div className="w-full lg:w-[75%] h-[50vh] lg:h-full overflow-y-auto flex flex-col gap-6 p-6 lg:p-12 pb-16 lg:pb-16 order-2 lg:order-1 bg-warm-black scrollbar-thin">
               {images.length > 0 ? (
                 images.map((imgSrc, index) => (
-                  <motion.div
+                  <div
                     key={imgSrc}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ delay: index === 0 ? 0.2 : 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="relative w-full aspect-[16/10] shrink-0 overflow-hidden bg-white/[0.02] border border-white/5 shadow-2xl"
+                    onClick={() => setFullScreenImage(imgSrc)}
+                    className="relative w-full aspect-[16/10] shrink-0 overflow-hidden bg-white/[0.02] border border-white/5 shadow-2xl cursor-pointer"
                   >
                     <Image
                       src={imgSrc}
                       alt={`${localProject.title} - Render ${index + 1}`}
                       fill
                       sizes="(max-w-1024px) 100vw, 65vw"
-                      className="object-cover transition-transform duration-700 hover:scale-[1.02]"
+                      className="object-contain transition-transform duration-700 hover:scale-[1.02]"
                       priority={index === 0} // Load the first image instantly
                       loading={index === 0 ? undefined : "lazy"}
                     />
-                  </motion.div>
+                  </div>
                 ))
               ) : (
                 <div className="w-full aspect-[16/10] bg-white/[0.02] border border-white/5 flex items-center justify-center text-white/30">
@@ -106,33 +104,33 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
               )}
             </div>
 
-            {/* Right Column: Sticky Project Details (35% width on desktop, scrolls independently if content overflows) */}
-            <div className="w-full lg:w-[35%] h-[50vh] lg:h-full flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-white/10 order-1 lg:order-2 bg-warm-black text-white project-details-panel">
+            {/* Right Column: Sticky Project Details */}
+            <div className="w-full lg:w-[25%] h-[50vh] lg:h-full flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-white/10 order-1 lg:order-2 bg-warm-black text-white project-details-panel">
               
-              <div className="flex flex-col project-details-inner">
+              <div className="flex flex-col project-details-inner p-6 lg:p-10">
                 {/* Category Tags */}
                 <span className="text-[10px] md:text-[11px] font-bold tracking-[0.35em] uppercase text-gold-accent mb-4 font-body block project-details-tags">
                   {localProject.tags.join(" / ")}
                 </span>
 
                 {/* Title */}
-                <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-white mb-6 leading-none project-details-title">
+                <h1 className="font-heading text-2xl md:text-3xl lg:text-3xl font-bold uppercase tracking-tight text-white mb-3 leading-none project-details-title break-words hyphens-auto">
                   {localProject.title}
                 </h1>
 
                 {/* Vertical Divider */}
-                <div className="w-12 h-[1px] bg-gold-accent mb-10 project-details-divider" />
+                <div className="w-12 h-[1px] bg-gold-accent mb-6 project-details-divider" />
 
                 {/* Detailed Description */}
-                <p className="font-body text-sm md:text-base text-white/85 font-light leading-relaxed mb-0 max-w-md project-details-description">
+                <p className="font-body text-xs lg:text-sm text-white/85 font-light leading-relaxed mb-0 max-w-md project-details-description">
                   {localProject.longDescription || localProject.description}
                 </p>
 
                 {/* Technical Specs List */}
                 {localProject.details && (
-                  <div className="border-t border-white/10 pt-6 mt-12 space-y-0 max-w-md project-details-specs">
-                    {localProject.details.location && (
-                      <div className="flex justify-between items-baseline py-5 border-b border-white/5 project-details-spec-item">
+                  <div className="border-t border-white/10 pt-4 mt-6 space-y-0 max-w-md project-details-specs">
+                    {localProject.details.location && localProject.details.location !== "—" && localProject.details.location !== "-" && (
+                      <div className="flex justify-between items-baseline py-3 border-b border-white/5 project-details-spec-item">
                         <span className="text-[10px] uppercase tracking-[0.2em] text-white/45 font-body shrink-0">
                           {t.projects.specs.location}
                         </span>
@@ -141,8 +139,8 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
                         </span>
                       </div>
                     )}
-                    {localProject.details.type && (
-                      <div className="flex justify-between items-baseline py-5 border-b border-white/5 project-details-spec-item">
+                    {localProject.details.type && localProject.details.type !== "—" && localProject.details.type !== "-" && (
+                      <div className="flex justify-between items-baseline py-3 border-b border-white/5 project-details-spec-item">
                         <span className="text-[10px] uppercase tracking-[0.2em] text-white/45 font-body shrink-0">
                           {t.projects.specs.type}
                         </span>
@@ -151,8 +149,8 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
                         </span>
                       </div>
                     )}
-                    {localProject.details.area && (
-                      <div className="flex justify-between items-baseline py-5 border-b border-white/5 project-details-spec-item">
+                    {localProject.details.area && localProject.details.area !== "—" && localProject.details.area !== "-" && (
+                      <div className="flex justify-between items-baseline py-3 border-b border-white/5 project-details-spec-item">
                         <span className="text-[10px] uppercase tracking-[0.2em] text-white/45 font-body shrink-0">
                           {t.projects.specs.area}
                         </span>
@@ -161,8 +159,8 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
                         </span>
                       </div>
                     )}
-                    {localProject.details.scope && (
-                      <div className="flex justify-between items-baseline py-5 border-b border-white/5 project-details-spec-item">
+                    {localProject.details.scope && localProject.details.scope !== "—" && localProject.details.scope !== "-" && (
+                      <div className="flex justify-between items-baseline py-3 border-b border-white/5 project-details-spec-item">
                         <span className="text-[10px] uppercase tracking-[0.2em] text-white/45 font-body shrink-0">
                           {t.projects.specs.scope}
                         </span>
@@ -171,8 +169,8 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
                         </span>
                       </div>
                     )}
-                    {localProject.details.year && (
-                      <div className="flex justify-between items-baseline py-5 border-b border-white/5 project-details-spec-item">
+                    {localProject.details.year && localProject.details.year !== "—" && localProject.details.year !== "-" && (
+                      <div className="flex justify-between items-baseline py-3 border-b border-white/5 project-details-spec-item">
                         <span className="text-[10px] uppercase tracking-[0.2em] text-white/45 font-body shrink-0">
                           {t.projects.specs.year}
                         </span>
@@ -184,22 +182,37 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
                   </div>
                 )}
               </div>
-
-              {/* Discuss project on Whatsapp Button at the bottom */}
-              <div className="mt-20 pt-6 border-t border-white/10 max-w-md project-details-button project-details-button-container">
-                <a
-                  href={`https://wa.me/996553637901?text=${encodeURIComponent(`${t.projects.modal_whatsapp_text}${localProject.title}`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-between text-base uppercase tracking-[0.3em] font-bold bg-gold-accent border border-gold-accent text-white hover:bg-transparent hover:text-white transition-all duration-300 rounded-none text-center font-body py-[28px] px-[40px] group cursor-pointer"
-                >
-                  {t.projects.modal_btn}
-                  <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-                </a>
-              </div>
-
             </div>
             
+          </div>
+        </motion.div>
+      )}
+      
+      {/* Fullscreen Image Overlay */}
+      {fullScreenImage && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-[60] bg-black/95 backdrop-blur-xl flex items-center justify-center"
+          onClick={() => setFullScreenImage(null)}
+        >
+          <button
+            onClick={() => setFullScreenImage(null)}
+            className="absolute top-8 right-8 z-[70] p-3 bg-white/5 hover:bg-gold-accent hover:text-warm-black text-white rounded-none border border-white/10 transition-all duration-300 backdrop-blur-sm group cursor-pointer"
+          >
+            <X className="w-6 h-6 transition-transform duration-300 group-hover:rotate-90" />
+          </button>
+          
+          <div className="relative w-full h-full p-4 md:p-12 lg:p-20 flex items-center justify-center">
+            <Image
+              src={fullScreenImage}
+              alt="Fullscreen view"
+              fill
+              sizes="100vw"
+              className="object-contain"
+              priority
+            />
           </div>
         </motion.div>
       )}
