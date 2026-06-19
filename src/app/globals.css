@@ -158,3 +158,10 @@ body {
 .scrollbar-none::-webkit-scrollbar {
   display: none;             /* Chrome, Safari, Opera */
 }
+
+/* Hide WhatsApp floating button when a fullscreen modal is open */
+body.modal-open .whatsapp-widget {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.3s ease;
+}

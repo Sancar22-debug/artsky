@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Expand } from "lucide-react";
 import ProjectShowcaseModal from "@/components/ProjectShowcaseModal";
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -883,11 +883,12 @@ export default function Projects() {
         <div className="h-6 md:h-10 lg:h-12" />
 
         <div className="flex overflow-x-auto lg:grid lg:grid-cols-12 gap-4 lg:gap-5 pb-4 snap-x snap-mandatory scrollbar-none -mx-12 px-12 lg:mx-0 lg:px-0">
-          {(showAllProjects ? projects : projects.slice(0, 5)).map((project, index) => (
+          {/* Mobile: always show all projects (horizontal scroll). Desktop: respect showAllProjects toggle */}
+          {projects.map((project, index) => (
             <div
               key={project.id}
               onClick={() => handleProjectClick(project.id)}
-              className={`relative overflow-hidden group rounded-none cursor-pointer min-w-[85vw] sm:min-w-[50vw] lg:min-w-0 snap-center w-full lg:w-auto ${project.colSpan}`}
+              className={`relative overflow-hidden group rounded-none cursor-pointer min-w-[85vw] sm:min-w-[50vw] lg:min-w-0 snap-center w-full lg:w-auto ${project.colSpan} ${!showAllProjects && index >= 5 ? "lg:hidden" : ""}`}
             >
               {/* Card Background Image or Solid Color */}
               {project.image ? (
@@ -896,7 +897,8 @@ export default function Projects() {
                     src={project.image}
                     alt={project.title}
                     fill
-                    sizes="(max-w-[768px]) 100vw, 50vw"
+                    sizes="(max-width: 640px) 85vw, (max-width: 1024px) 50vw, 50vw"
+                    unoptimized
                     className="object-cover z-0 transition-all duration-700 ease-[0.16, 1, 0.3, 1] group-hover:scale-105 group-hover:brightness-75"
                   />
                   {/* Subtle dark gradient overlay for text readability */}
@@ -905,6 +907,11 @@ export default function Projects() {
               ) : (
                 <div className={`absolute inset-0 z-0 ${project.bg} group-hover:brightness-75 transition-all duration-500`} />
               )}
+
+              {/* Expand / Fullscreen Icon — top right */}
+              <div className="absolute top-4 right-4 z-30 p-2 bg-black/30 backdrop-blur-sm rounded-full text-white/60 group-hover:text-white group-hover:bg-black/50 transition-all duration-300 opacity-70 group-hover:opacity-100">
+                <Expand className="w-4 h-4" />
+              </div>
 
               {/* Text Over Image Content */}
               <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 sm:p-10 lg:p-12">
@@ -934,7 +941,7 @@ export default function Projects() {
 
         {/* Watch All Projects Button */}
         {!showAllProjects && (
-          <div className="flex justify-center">
+          <div className="hidden lg:flex justify-center">
             <motion.button
               onClick={() => setShowAllProjects(true)}
               initial={{ opacity: 0, y: 15 }}
