@@ -19,6 +19,7 @@ interface ProjectData {
   description: string;
   tags: string[];
   images?: string[];
+  video?: string;
   details?: ProjectDetails;
   longDescription?: string;
 }
@@ -159,6 +160,18 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
             {/* Scrollable Image Gallery */}
             <div className="w-full h-full overflow-y-auto pt-16 pb-8 px-3">
               <div className="flex flex-col gap-3">
+                {/* Video player if available */}
+                {localProject?.video && (
+                  <div className="relative w-full aspect-video shrink-0 bg-black/50 overflow-hidden">
+                    <video
+                      src={localProject.video}
+                      controls
+                      playsInline
+                      className="w-full h-full object-contain"
+                      preload="metadata"
+                    />
+                  </div>
+                )}
                 {images.length > 0 ? (
                   images.map((imgSrc, index) => (
                     <div
@@ -233,6 +246,18 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
 
             {/* Left Column: Image Gallery (75% width on desktop, scrolls independently) */}
             <div className="w-[75%] h-full overflow-y-auto flex flex-col gap-6 p-12 pb-16 bg-warm-black scrollbar-thin">
+              {/* Video player if available */}
+              {localProject?.video && (
+                <div className="relative w-full aspect-video shrink-0 overflow-hidden bg-white/[0.02] border border-white/5 shadow-2xl">
+                  <video
+                    src={localProject.video}
+                    controls
+                    playsInline
+                    className="w-full h-full object-contain"
+                    preload="metadata"
+                  />
+                </div>
+              )}
               {images.length > 0 ? (
                 images.map((imgSrc, index) => (
                   <div

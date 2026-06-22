@@ -32,6 +32,9 @@ const projectImages: Record<string, string[]> = {
     "/imgs/projects/abdymomunova/View07_Post.webp"
   ],
   "alaarcha": [
+    "/imgs/projects/alaarcha/03.webp",
+    "/imgs/projects/alaarcha/05.webp",
+    "/imgs/projects/alaarcha/09.webp",
     "/imgs/projects/alaarcha/final_View01_Post.webp",
     "/imgs/projects/alaarcha/final_View02_Post.webp",
     "/imgs/projects/alaarcha/final_View03_Post.webp",
@@ -54,7 +57,8 @@ const projectImages: Record<string, string[]> = {
     "/imgs/projects/alaarcha/final_View21_Post.webp",
     "/imgs/projects/alaarcha/final_View22_Post.webp",
     "/imgs/projects/alaarcha/final_View23_Post.webp",
-    "/imgs/projects/alaarcha/final_View220000_Post.webp"
+    "/imgs/projects/alaarcha/final_View220000_Post.webp",
+    "/imgs/projects/alaarcha/photo_5474521463768871028_y.webp"
   ],
   "erkindik": [
     "/imgs/projects/erkindik/1 (3).webp",
@@ -143,6 +147,28 @@ const projectImages: Record<string, string[]> = {
   ],
   "mossovet": [
     "/imgs/projects/mossovet/1_Post.webp",
+    "/imgs/projects/mossovet/1-4_14 - Photo.webp",
+    "/imgs/projects/mossovet/1.webp",
+    "/imgs/projects/mossovet/2.webp",
+    "/imgs/projects/mossovet/3.webp",
+    "/imgs/projects/mossovet/4.webp",
+    "/imgs/projects/mossovet/5.webp",
+    "/imgs/projects/mossovet/6.webp",
+    "/imgs/projects/mossovet/7.webp",
+    "/imgs/projects/mossovet/8.webp",
+    "/imgs/projects/mossovet/9.webp",
+    "/imgs/projects/mossovet/10.webp",
+    "/imgs/projects/mossovet/11.webp",
+    "/imgs/projects/mossovet/12.webp",
+    "/imgs/projects/mossovet/13.webp",
+    "/imgs/projects/mossovet/14.webp",
+    "/imgs/projects/mossovet/15.webp",
+    "/imgs/projects/mossovet/16.webp",
+    "/imgs/projects/mossovet/20.webp",
+    "/imgs/projects/mossovet/21.webp",
+    "/imgs/projects/mossovet/22.webp",
+    "/imgs/projects/mossovet/23.webp",
+    "/imgs/projects/mossovet/102.webp",
     "/imgs/projects/mossovet/4141_View01_Post-gigapixel-art-scale-1_20x.webp",
     "/imgs/projects/mossovet/4141_View02_Post-gigapixel-art-scale-1_20x.webp",
     "/imgs/projects/mossovet/4141_View03_Post-gigapixel-art-scale-1_20x.webp",
@@ -295,6 +321,11 @@ const projectImages: Record<string, string[]> = {
     "/imgs/projects/predgorniy/03_Photo - 10.webp",
     "/imgs/projects/predgorniy/04_19 - Photo.webp",
     "/imgs/projects/predgorniy/04_20 - Photo.webp",
+    "/imgs/projects/predgorniy/1.webp",
+    "/imgs/projects/predgorniy/2.webp",
+    "/imgs/projects/predgorniy/3.webp",
+    "/imgs/projects/predgorniy/4.webp",
+    "/imgs/projects/predgorniy/9.webp",
     "/imgs/projects/predgorniy/22_Exterior - Day.webp",
     "/imgs/projects/predgorniy/22_Exterior - Night Closeup.webp",
     "/imgs/projects/predgorniy/22_Exterior - Sunny day.webp",
@@ -306,6 +337,7 @@ const projectImages: Record<string, string[]> = {
     "/imgs/projects/predgorniy/26_Photo - 9.webp",
     "/imgs/projects/predgorniy/26_Photo - 10.webp",
     "/imgs/projects/predgorniy/27.webp",
+    "/imgs/projects/predgorniy/27_1.webp",
     "/imgs/projects/predgorniy/30_11 - Photo.webp",
     "/imgs/projects/predgorniy/30_12 - Photo.webp",
     "/imgs/projects/predgorniy/31_15 - Photo.webp",
@@ -317,12 +349,6 @@ const projectImages: Record<string, string[]> = {
     "/imgs/projects/predgorniy/predgornaya stroika1_pdf-1.webp"
   ],
   "predgorniy_apartments": [
-    "/imgs/projects/predgorniy_apartments/1_pdf-1.webp",
-    "/imgs/projects/predgorniy_apartments/2_pdf-1.webp",
-    "/imgs/projects/predgorniy_apartments/7etaj1_pdf-1.webp",
-    "/imgs/projects/predgorniy_apartments/52_pdf-1.webp",
-    "/imgs/projects/predgorniy_apartments/giff_pdf-1.webp",
-    "/imgs/projects/predgorniy_apartments/giff_pdf-2.webp",
     "/imgs/projects/predgorniy_apartments/kv1_View01_Post-gigapixel-art-scale-1_00x.webp",
     "/imgs/projects/predgorniy_apartments/kv1_View02_Post-gigapixel-art-scale-1_00x.webp",
     "/imgs/projects/predgorniy_apartments/kv1_View03_Post-gigapixel-art-scale-1_00x.webp",
@@ -465,7 +491,13 @@ const projectImages: Record<string, string[]> = {
     "/imgs/projects/predgorniy_apartments/kv4_View49_Post-gigapixel-lines-scale-2_40x.webp",
     "/imgs/projects/predgorniy_apartments/kv4_View50_Post-gigapixel-lines-scale-2_40x.webp",
     "/imgs/projects/predgorniy_apartments/kv4_View51_Post-gigapixel-lines-scale-2_40x.webp",
-    "/imgs/projects/predgorniy_apartments/kv4_View52_Post-gigapixel-lines-scale-2_40x.webp"
+    "/imgs/projects/predgorniy_apartments/kv4_View52_Post-gigapixel-lines-scale-2_40x.webp",
+    "/imgs/projects/predgorniy_apartments/1_pdf-1.webp",
+    "/imgs/projects/predgorniy_apartments/2_pdf-1.webp",
+    "/imgs/projects/predgorniy_apartments/7etaj1_pdf-1.webp",
+    "/imgs/projects/predgorniy_apartments/52_pdf-1.webp",
+    "/imgs/projects/predgorniy_apartments/giff_pdf-1.webp",
+    "/imgs/projects/predgorniy_apartments/giff_pdf-2.webp"
   ],
   "prestige": [
     "/imgs/projects/prestige/412412_View01_Post-gigapixel-art-scale-2_00x.webp",
@@ -620,7 +652,30 @@ const projectImages: Record<string, string[]> = {
     "/imgs/projects/wellness/11_View090000_Post.webp",
     "/imgs/projects/wellness/11_View100000_Post.webp",
     "/imgs/projects/wellness/11_View100000_Post1.webp"
+  ],
+  "yunusalieva": [
+    "/imgs/projects/yunusalieva/01.webp",
+    "/imgs/projects/yunusalieva/03.webp",
+    "/imgs/projects/yunusalieva/044.webp",
+    "/imgs/projects/yunusalieva/047.webp",
+    "/imgs/projects/yunusalieva/053.webp",
+    "/imgs/projects/yunusalieva/055.webp",
+    "/imgs/projects/yunusalieva/056.webp",
+    "/imgs/projects/yunusalieva/ACCamera_1.webp"
+  ],
+  "smolenskiy": [
+    "/imgs/projects/smolenskiy/11.webp",
+    "/imgs/projects/smolenskiy/2ffe6288-301f-4ac4-ac70-854aa752ea2e.webp",
+    "/imgs/projects/smolenskiy/8d89f08c-c9a3-4e16-a5bf-90f9c6f737b5.webp",
+    "/imgs/projects/smolenskiy/d2d22c63-1273-4ac4-9bba-ab94f407b09d.webp",
+    "/imgs/projects/smolenskiy/f0065163-619f-4ff8-9276-7a3ecacba2be.webp",
+    "/imgs/projects/smolenskiy/Scene 5 копия.webp"
   ]
+};
+
+const projectVideos: Record<string, string> = {
+  "mossovet": "/imgs/projects/mossovet/mossovet_video.mp4",
+  "predgorniy": "/imgs/projects/predgorniy/predgorniy_video.mp4",
 };
 
 export default function Projects() {
@@ -630,6 +685,7 @@ export default function Projects() {
     description: string;
     tags: string[];
     images?: string[];
+    video?: string;
     details?: {
       location?: string;
       type?: string;
@@ -642,14 +698,11 @@ export default function Projects() {
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const projects = [
-    // Row 1 (featured)
     {
       id: "erkindik",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["erkindik"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["erkindik"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["erkindik"].tags,
-      colSpan: "lg:col-span-7 h-[350px] md:h-[450px] lg:h-[550px]",
-      bg: "bg-[#4a4a4a]",
       image: projectImages.erkindik[17],
     },
     {
@@ -657,46 +710,27 @@ export default function Projects() {
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["prestige"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["prestige"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["prestige"].tags,
-      colSpan: "lg:col-span-5 h-[350px] md:h-[450px] lg:h-[550px]",
-      bg: "bg-[#3a3a3a]",
       image: projectImages.prestige[0],
-    },
-    // Row 2
-    {
-      id: "predgorniy_apartments",
-      title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["predgorniy_apartments"].title,
-      description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["predgorniy_apartments"].description,
-      tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["predgorniy_apartments"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#505050]",
-      image: projectImages.predgorniy_apartments[0],
     },
     {
       id: "predgorniy",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["predgorniy"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["predgorniy"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["predgorniy"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#3e3e3e]",
-      image: projectImages.predgorniy[0],
+      image: projectImages.predgorniy[2],
     },
     {
       id: "ordo",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["ordo"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["ordo"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["ordo"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#454545]",
       image: projectImages.ordo[0],
     },
-    // Row 3 (wide)
     {
       id: "abdymomunova",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["abdymomunova"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["abdymomunova"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["abdymomunova"].tags,
-      colSpan: "lg:col-span-6 h-[350px] md:h-[400px] lg:h-[450px]",
-      bg: "bg-[#4a4a4a]",
       image: projectImages.abdymomunova[0],
     },
     {
@@ -704,18 +738,13 @@ export default function Projects() {
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["orion"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["orion"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["orion"].tags,
-      colSpan: "lg:col-span-6 h-[350px] md:h-[400px] lg:h-[450px]",
-      bg: "bg-[#3a3a3a]",
       image: projectImages.orion[0],
     },
-    // Row 4
     {
       id: "alaarcha",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["alaarcha"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["alaarcha"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["alaarcha"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#505050]",
       image: projectImages.alaarcha[0],
     },
     {
@@ -723,8 +752,6 @@ export default function Projects() {
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["globalmed"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["globalmed"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["globalmed"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#3e3e3e]",
       image: projectImages.globalmed[0],
     },
     {
@@ -732,18 +759,13 @@ export default function Projects() {
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["mossovet"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["mossovet"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["mossovet"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#454545]",
-      image: projectImages.mossovet[0],
+      image: projectImages.mossovet[2],
     },
-    // Row 5 (featured)
     {
       id: "usenbaeva",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["usenbaeva"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["usenbaeva"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["usenbaeva"].tags,
-      colSpan: "lg:col-span-5 h-[350px] md:h-[450px] lg:h-[500px]",
-      bg: "bg-[#4a4a4a]",
       image: projectImages.usenbaeva[0],
     },
     {
@@ -751,18 +773,13 @@ export default function Projects() {
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["wellness"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["wellness"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["wellness"].tags,
-      colSpan: "lg:col-span-7 h-[350px] md:h-[450px] lg:h-[500px]",
-      bg: "bg-[#3a3a3a]",
       image: projectImages.wellness[0],
     },
-    // Row 6
     {
       id: "turkish_airlines",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["turkish_airlines"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["turkish_airlines"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["turkish_airlines"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#505050]",
       image: projectImages.turkish_airlines[0],
     },
     {
@@ -770,18 +787,13 @@ export default function Projects() {
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["private_house"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["private_house"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["private_house"].tags,
-      colSpan: "lg:col-span-8 h-[350px] md:h-[400px]",
-      bg: "bg-[#3e3e3e]",
       image: projectImages.private_house[0],
     },
-    // Row 7 (wide)
     {
       id: "medikon",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["medikon"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["medikon"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["medikon"].tags,
-      colSpan: "lg:col-span-6 h-[350px] md:h-[400px] lg:h-[450px]",
-      bg: "bg-[#4a4a4a]",
       image: projectImages.medikon[2],
     },
     {
@@ -789,18 +801,13 @@ export default function Projects() {
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["o2_office"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["o2_office"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["o2_office"].tags,
-      colSpan: "lg:col-span-6 h-[350px] md:h-[400px] lg:h-[450px]",
-      bg: "bg-[#3a3a3a]",
       image: projectImages.o2_office[0],
     },
-    // Row 8
     {
       id: "prestige_entrance",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["prestige_entrance"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["prestige_entrance"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["prestige_entrance"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#505050]",
       image: projectImages.prestige_entrance[0],
     },
     {
@@ -808,8 +815,6 @@ export default function Projects() {
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["keshte"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["keshte"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["keshte"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#3e3e3e]",
       image: projectImages.keshte[0],
     },
     {
@@ -817,19 +822,35 @@ export default function Projects() {
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["restaurant"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["restaurant"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["restaurant"].tags,
-      colSpan: "lg:col-span-4 h-[350px] md:h-[400px]",
-      bg: "bg-[#454545]",
       image: projectImages.restaurant[0],
     },
-    // Row 9 (full width)
     {
       id: "orenburgskaya",
       title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["orenburgskaya"].title,
       description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["orenburgskaya"].description,
       tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["orenburgskaya"].tags,
-      colSpan: "lg:col-span-8 lg:col-start-3 h-[300px] md:h-[350px] lg:h-[400px]",
-      bg: "bg-[#4a4a4a]",
       image: projectImages.orenburgskaya[0],
+    },
+    {
+      id: "yunusalieva",
+      title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["yunusalieva"].title,
+      description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["yunusalieva"].description,
+      tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["yunusalieva"].tags,
+      image: projectImages.yunusalieva[0],
+    },
+    {
+      id: "smolenskiy",
+      title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["smolenskiy"].title,
+      description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["smolenskiy"].description,
+      tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["smolenskiy"].tags,
+      image: projectImages.smolenskiy[0],
+    },
+    {
+      id: "predgorniy_apartments",
+      title: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["predgorniy_apartments"].title,
+      description: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["predgorniy_apartments"].description,
+      tags: (t.projects.list as Record<string, typeof t.projects.list.erkindik>)["predgorniy_apartments"].tags,
+      image: projectImages.predgorniy_apartments[0],
     },
   ];
 
@@ -844,6 +865,7 @@ export default function Projects() {
       description: trans.description,
       tags: [...trans.tags],
       images: projectImages[id] || [],
+      video: projectVideos[id],
       details: trans.details,
       longDescription: trans.longDescription || trans.description
     });
@@ -882,54 +904,38 @@ export default function Projects() {
         {/* Spacer between heading and grid */}
         <div className="h-6 md:h-10 lg:h-12" />
 
-        <div className="flex overflow-x-auto lg:grid lg:grid-cols-12 gap-4 lg:gap-5 pb-4 snap-x snap-mandatory scrollbar-none -mx-12 px-12 lg:mx-0 lg:px-0">
-          {/* Mobile: always show all projects (horizontal scroll). Desktop: respect showAllProjects toggle */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-1 md:gap-2 pb-4">
           {projects.map((project, index) => (
             <div
               key={project.id}
               onClick={() => handleProjectClick(project.id)}
-              className={`relative overflow-hidden group rounded-none cursor-pointer min-w-[85vw] sm:min-w-[50vw] lg:min-w-0 snap-center w-full lg:w-auto ${project.colSpan} ${!showAllProjects && index >= 5 ? "lg:hidden" : ""}`}
+              className={`relative overflow-hidden group cursor-pointer aspect-square w-full bg-[#2a2a2a] ${!showAllProjects && index >= 12 ? "hidden" : ""}`}
             >
-              {/* Card Background Image or Solid Color */}
-              {project.image ? (
-                <>
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    sizes="(max-width: 640px) 85vw, (max-width: 1024px) 50vw, 50vw"
-                    unoptimized
-                    className="object-cover z-0 transition-all duration-700 ease-[0.16, 1, 0.3, 1] group-hover:scale-105 group-hover:brightness-75"
-                  />
-                  {/* Subtle dark gradient overlay for text readability */}
-                  <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/85 via-black/30 to-black/10 transition-opacity duration-500 group-hover:from-black/90 group-hover:via-black/40 group-hover:to-black/20" />
-                </>
-              ) : (
-                <div className={`absolute inset-0 z-0 ${project.bg} group-hover:brightness-75 transition-all duration-500`} />
+              {/* Card Background Image */}
+              {project.image && (
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                  unoptimized
+                  priority={index < 10}
+                  className="object-cover z-0 transition-all duration-700 ease-[0.16, 1, 0.3, 1] grayscale group-hover:grayscale-0 group-hover:scale-105"
+                />
               )}
 
-              {/* Expand / Fullscreen Icon — top right */}
-              <div className="absolute top-4 right-4 z-30 p-2 bg-black/30 backdrop-blur-sm rounded-full text-white/60 group-hover:text-white group-hover:bg-black/50 transition-all duration-300 opacity-70 group-hover:opacity-100">
-                <Expand className="w-4 h-4" />
-              </div>
-
-              {/* Text Over Image Content */}
-              <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 sm:p-10 lg:p-12">
-                <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500 ease-[0.16, 1, 0.3, 1]">
-                  {/* Tags in small uppercase */}
-                  <span className="text-[10px] md:text-[11px] font-bold tracking-[0.25em] uppercase text-gold-accent mb-3 block">
+              {/* Text Content - Center it, show only on hover */}
+              <div className="absolute inset-0 z-20 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
+                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-[0.16, 1, 0.3, 1] bg-black/30 backdrop-blur-[2px] px-4 py-3 lg:px-6 lg:py-4">
+                  {/* Tags */}
+                  <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] uppercase text-gold-accent mb-2 block">
                     {project.tags.join(" / ")}
                   </span>
                   
                   {/* Title */}
-                  <h3 className="font-heading text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-tight text-white mb-2 leading-none">
+                  <h3 className="font-heading text-sm md:text-base lg:text-lg font-bold uppercase tracking-tight text-white mb-0 leading-tight">
                     {project.title}
                   </h3>
-
-                  {/* Description (Fades in on hover) */}
-                  <p className="font-body text-xs md:text-sm text-white/70 font-light leading-relaxed max-w-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75">
-                    {project.description}
-                  </p>
                 </div>
               </div>
             </div>

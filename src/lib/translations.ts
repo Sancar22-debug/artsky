@@ -352,6 +352,32 @@ export const translations = {
             year: "2024"
           },
           longDescription: "Дизайн-проект индивидуального жилого дома по ул. Оренбургская, г. Бишкек. Завершён."
+        },
+        yunusalieva: {
+          title: "БЦ по ул. Юнусалиева",
+          description: "Архитектурный проект бизнес-центра на ул. Юнусалиева.",
+          tags: ["Архитектура", "Коммерческий объект"],
+          details: {
+            location: "г. Бишкек, ул. Юнусалиева",
+            type: "Бизнес-центр",
+            area: "—",
+            scope: "Архитектурный проект",
+            year: "—"
+          },
+          longDescription: "Архитектурный проект бизнес-центра по ул. Юнусалиева, г. Бишкек."
+        },
+        smolenskiy: {
+          title: "ИЖД пер. Смоленский, д. 19",
+          description: "Проект 2-х этажного индивидуального жилого дома.",
+          tags: ["Архитектура", "Частный дом"],
+          details: {
+            location: "г. Бишкек, пер. Смоленский, д. 19",
+            type: "Частный жилой дом",
+            area: "—",
+            scope: "Проект жилого дома",
+            year: "—"
+          },
+          longDescription: "Проект 2-х этажного индивидуального жилого дома на собственном земельном участке г. Бишкек, пер. Смоленский, д. 19. Стадия реализации."
         }
       }
     },
@@ -757,6 +783,32 @@ export const translations = {
             year: "2024"
           },
           longDescription: "Interior design of a private residential house on Orenburgskaya St, Bishkek. Completed."
+        },
+        yunusalieva: {
+          title: "BC on Yunusalieva St",
+          description: "Architectural design of a business center on Yunusalieva St.",
+          tags: ["Architecture", "Commercial"],
+          details: {
+            location: "Bishkek, Yunusalieva St",
+            type: "Business Center",
+            area: "—",
+            scope: "Architectural design",
+            year: "—"
+          },
+          longDescription: "Architectural design of a business center on Yunusalieva St, Bishkek."
+        },
+        smolenskiy: {
+          title: "Private House, Smolenskiy Lane 19",
+          description: "Design of a 2-story private residential house.",
+          tags: ["Architecture", "Private House"],
+          details: {
+            location: "Bishkek, 19 Smolenskiy Lane",
+            type: "Private Residential House",
+            area: "—",
+            scope: "Residential house design",
+            year: "—"
+          },
+          longDescription: "Design of a 2-story private residential house on its own land plot at 19 Smolenskiy Lane, Bishkek. Implementation stage."
         }
       }
     },
