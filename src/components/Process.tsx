@@ -25,7 +25,7 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[12px] md:text-[13px] font-bold tracking-[0.3em] uppercase text-gold-accent mb-6 block font-body"
+              className="text-[12px] md:text-[13px] font-bold tracking-[0.3em] uppercase text-white/50 mb-6 block font-body"
             >
               {t.process.label}
             </motion.span>
@@ -57,7 +57,7 @@ export default function Process() {
                   className="relative pl-12 md:pl-20 group"
                 >
                   {/* Timeline Dot */}
-                  <div className="absolute left-[19px] md:left-[35px] top-[24px] w-2.5 h-2.5 bg-gold-accent border border-warm-black rounded-none transform -translate-x-1/2 group-hover:scale-125 transition-transform duration-300" />
+                  <div className="absolute left-[19px] md:left-[35px] top-[24px] w-2.5 h-2.5 bg-white border border-warm-black rounded-none transform -translate-x-1/2 group-hover:scale-125 transition-transform duration-300" />
 
                   {/* Step Layout */}
                   <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
@@ -68,7 +68,7 @@ export default function Process() {
 
                     {/* Step Content */}
                     <div className="flex-1">
-                      <h3 className="text-base md:text-lg font-body font-bold uppercase tracking-wider text-white mb-3 group-hover:text-gold-accent transition-colors duration-300">
+                      <h3 className="text-base md:text-lg font-body font-bold uppercase tracking-wider text-white mb-3 group-hover:text-white/70 transition-colors duration-300">
                         {step.title}
                       </h3>
                       <p className="text-sm md:text-base text-white/60 font-body font-light leading-relaxed max-w-xl">

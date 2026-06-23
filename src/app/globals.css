@@ -5,7 +5,7 @@
   --warm-black: #1A1715;
   --bg-beige: #F5F1EA;
   --light-stone: #E7DED2;
-  --gold-accent: #B88A44;
+  --accent-gray: #8A8A8A;
   --text-gray: #6F6A63;
   --white: #FFFFFF;
 }
@@ -15,7 +15,7 @@
   --color-warm-black: var(--warm-black);
   --color-bg-beige: var(--bg-beige);
   --color-light-stone: var(--light-stone);
-  --color-gold-accent: var(--gold-accent);
+  --color-accent-gray: var(--accent-gray);
   --color-text-gray: var(--text-gray);
   --color-white: var(--white);
 

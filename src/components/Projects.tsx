@@ -886,7 +886,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[12px] md:text-[13px] font-bold tracking-[0.3em] uppercase text-gold-accent mb-6 block font-body"
+            className="text-[12px] md:text-[13px] font-bold tracking-[0.3em] uppercase text-text-gray mb-6 block font-body"
           >
             {t.projects.label}
           </motion.span>
@@ -928,7 +928,7 @@ export default function Projects() {
               <div className="absolute inset-0 z-20 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-[0.16, 1, 0.3, 1] bg-black/30 backdrop-blur-[2px] px-4 py-3 lg:px-6 lg:py-4">
                   {/* Tags */}
-                  <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] uppercase text-gold-accent mb-2 block">
+                  <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] uppercase text-white/60 mb-2 block">
                     {project.tags.join(" / ")}
                   </span>
                   

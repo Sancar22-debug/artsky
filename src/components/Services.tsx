@@ -40,7 +40,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[12px] md:text-[13px] font-bold tracking-[0.35em] uppercase text-gold-accent mb-6 block font-body"
+            className="text-[12px] md:text-[13px] font-bold tracking-[0.35em] uppercase text-white/50 mb-6 block font-body"
           >
             {t.services.label}
           </motion.span>

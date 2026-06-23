@@ -72,7 +72,7 @@ export default function Loader() {
                 duration: 1.5, 
                 ease: "easeInOut" 
               }}
-              className="absolute inset-0 bg-gold-accent w-full"
+              className="absolute inset-0 bg-white w-full"
             />
           </div>
         </motion.div>

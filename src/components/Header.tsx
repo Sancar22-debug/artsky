@@ -103,16 +103,16 @@ export default function Header() {
                   <Icon
                     className={`w-4 h-4 stroke-[1.5] transition-colors duration-300 ${
                       isScrolled
-                        ? "text-text-gray/70 group-hover:text-gold-accent"
-                        : "text-white/60 group-hover:text-gold-accent"
+                        ? "text-text-gray/70 group-hover:text-warm-black"
+                        : "text-white/60 group-hover:text-white"
                     }`}
                     style={{ marginRight: "10px" }}
                   />
                   <span
                     className={
                       isScrolled
-                        ? "text-warm-black group-hover:text-gold-accent transition-colors duration-300"
-                        : "text-white group-hover:text-gold-accent transition-colors duration-300"
+                        ? "text-warm-black group-hover:text-warm-black/60 transition-colors duration-300"
+                        : "text-white group-hover:text-white/80 transition-colors duration-300"
                     }
                   >
                     {item.label}
@@ -161,7 +161,7 @@ export default function Header() {
                 onClick={() => setLanguage("ru")}
                 className={`transition-colors duration-300 cursor-pointer ${
                   language === "ru"
-                    ? "text-gold-accent"
+                    ? isScrolled ? "text-warm-black" : "text-white"
                     : isScrolled ? "text-text-gray/40 hover:text-warm-black" : "text-white/40 hover:text-white"
                 }`}
               >
@@ -171,7 +171,7 @@ export default function Header() {
                 onClick={() => setLanguage("en")}
                 className={`transition-colors duration-300 cursor-pointer ${
                   language === "en"
-                    ? "text-gold-accent"
+                    ? isScrolled ? "text-warm-black" : "text-white"
                     : isScrolled ? "text-text-gray/40 hover:text-warm-black" : "text-white/40 hover:text-white"
                 }`}
               >
@@ -183,7 +183,7 @@ export default function Header() {
           {/* Mobile Menu Trigger */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 -mr-2 transition-colors duration-300 hover:text-gold-accent"
+            className="md:hidden p-2 -mr-2 transition-colors duration-300 hover:text-white/70"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
@@ -229,7 +229,7 @@ export default function Header() {
               </a>
               <button
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 text-white hover:text-gold-accent transition-colors duration-300"
+                className="p-2 text-white hover:text-white/70 transition-colors duration-300"
                 aria-label="Close menu"
               >
                 <X className="w-6 h-6" />
@@ -249,9 +249,9 @@ export default function Header() {
                       key={item.label}
                       href={item.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center text-xl uppercase tracking-[0.2em] font-heading font-bold text-white hover:text-gold-accent transition-all duration-300"
+                      className="flex items-center text-xl uppercase tracking-[0.2em] font-heading font-bold text-white hover:text-white/70 transition-all duration-300"
                     >
-                      <Icon className="w-5 h-5 text-gold-accent/80" style={{ marginRight: "14px" }} />
+                      <Icon className="w-5 h-5 text-white/60" style={{ marginRight: "14px" }} />
                       {item.label}
                     </motion.a>
                   );
@@ -278,13 +278,13 @@ export default function Header() {
                 <div className="flex flex-col text-[10.5px] font-bold tracking-wider leading-none text-left font-body border-l border-white/10 pl-6" style={{ gap: "8px" }}>
                   <span 
                     onClick={() => { setLanguage("ru"); setMobileMenuOpen(false); }}
-                    className={`cursor-pointer transition-colors duration-300 ${language === "ru" ? "text-gold-accent" : "text-white/40"}`}
+                    className={`cursor-pointer transition-colors duration-300 ${language === "ru" ? "text-white" : "text-white/40"}`}
                   >
                     RU
                   </span>
                   <span 
                     onClick={() => { setLanguage("en"); setMobileMenuOpen(false); }}
-                    className={`cursor-pointer transition-colors duration-300 ${language === "en" ? "text-gold-accent" : "text-white/40"}`}
+                    className={`cursor-pointer transition-colors duration-300 ${language === "en" ? "text-white" : "text-white/40"}`}
                   >
                     EN
                   </span>

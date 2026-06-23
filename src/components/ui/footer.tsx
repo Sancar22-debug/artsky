@@ -35,7 +35,7 @@ export function Footer({
           {/* Left Column (span 5): Contacts, Map */}
           <div className="lg:col-span-5 font-body flex flex-col">
             <div className="text-[10px] text-warm-black/50 uppercase tracking-[0.3em] font-bold mb-2.5 font-body">Контакты:</div>
-            <a href="tel:+996553637901" className="text-base text-warm-black font-bold hover:text-gold-accent transition-colors duration-300 mb-1.5 font-body">
+            <a href="tel:+996553637901" className="text-base text-warm-black font-bold hover:text-warm-black/70 transition-colors duration-300 mb-1.5 font-body">
               +996 (553) 63-79-01
             </a>
             <div className="text-xs text-warm-black/50 font-light mb-5 font-body">
@@ -52,7 +52,7 @@ export function Footer({
                 href="https://2gis.kg/bishkek/firm/70000001036765142?m=74.602583%2C42.867246%2F16"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute top-4 left-4 bg-warm-black/90 hover:bg-gold-accent hover:text-warm-black text-white border border-warm-black/10 px-4 py-2 text-[10px] font-bold uppercase tracking-widest rounded-none transition-colors duration-300 z-10 flex items-center gap-1.5 shadow-lg"
+                className="absolute top-4 left-4 bg-warm-black/90 hover:bg-white hover:text-warm-black text-white border border-warm-black/10 px-4 py-2 text-[10px] font-bold uppercase tracking-widest rounded-none transition-colors duration-300 z-10 flex items-center gap-1.5 shadow-lg"
               >
                 Открыть в 2ГИС
                 <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -74,7 +74,7 @@ export function Footer({
                   <li key={i} className="shrink-0">
                     <a
                       href={link.href}
-                      className="text-xs md:text-sm uppercase tracking-[0.15em] font-semibold text-warm-black/80 hover:text-gold-accent transition-colors duration-300 font-body"
+                      className="text-xs md:text-sm uppercase tracking-[0.15em] font-semibold text-warm-black/80 hover:text-warm-black transition-colors duration-300 font-body"
                     >
                       {link.label}
                     </a>
@@ -102,7 +102,7 @@ export function Footer({
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-9 w-9 rounded-none text-warm-black/70 hover:text-gold-accent hover:bg-warm-black/5 transition-colors duration-300 cursor-pointer flex items-center justify-center p-0"
+                      className="h-9 w-9 rounded-none text-warm-black/70 hover:text-warm-black hover:bg-warm-black/5 transition-colors duration-300 cursor-pointer flex items-center justify-center p-0"
                       asChild
                     >
                       <a href={link.href} target="_blank" aria-label={link.label} rel="noopener noreferrer">

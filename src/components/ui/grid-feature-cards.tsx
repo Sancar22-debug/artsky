@@ -49,7 +49,7 @@ export function FeatureCard({ feature, className, ...props }: FeatureCardPorps) 
 			</div>
 
 			<div className="relative z-10 mt-auto">
-				<h3 className="text-base md:text-lg lg:text-xl font-heading font-bold uppercase tracking-tight text-white group-hover:text-gold-accent transition-colors duration-300">{feature.title}</h3>
+				<h3 className="text-base md:text-lg lg:text-xl font-heading font-bold uppercase tracking-tight text-white group-hover:text-white/80 transition-colors duration-300">{feature.title}</h3>
 				<p className="text-white/60 relative z-20 mt-4 text-sm font-light leading-relaxed">{feature.description}</p>
 			</div>
 		</div>

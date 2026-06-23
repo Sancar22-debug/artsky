@@ -19,7 +19,7 @@ function Footerdemo() {
   return (
     <footer id="contacts" className="relative border-t border-light-stone/30 bg-bg-beige text-warm-black transition-colors duration-300 overflow-hidden custom-footer-padding">
       {/* Top decorative line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-accent/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-warm-black/15 to-transparent" />
 
       {/* Giant background logo watermark covering the full footer with low opacity */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none select-none z-0 flex items-center justify-center">
@@ -43,7 +43,7 @@ function Footerdemo() {
           {/* Column 1: Stay Connected (span 3) */}
           <div className="lg:col-span-3 flex flex-col gap-6">
             <div className="text-[10px] text-warm-black/40 uppercase tracking-[0.35em] font-bold font-body flex items-center gap-2">
-              <span className="w-4 h-px bg-gold-accent/50" />
+              <span className="w-4 h-px bg-warm-black/30" />
               {t.footer.quick_contact}
             </div>
             
@@ -73,7 +73,7 @@ function Footerdemo() {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-10 w-10 rounded-none text-warm-black/60 hover:text-gold-accent hover:bg-warm-black/5 transition-all duration-300 cursor-pointer"
+                      className="h-10 w-10 rounded-none text-warm-black/60 hover:text-warm-black hover:bg-warm-black/5 transition-all duration-300 cursor-pointer"
                       asChild
                     >
                       <a href="https://www.instagram.com/artsky.kg" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -97,7 +97,7 @@ function Footerdemo() {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-10 w-10 rounded-none text-warm-black/60 hover:text-gold-accent hover:bg-warm-black/5 transition-all duration-300 cursor-pointer"
+                      className="h-10 w-10 rounded-none text-warm-black/60 hover:text-warm-black hover:bg-warm-black/5 transition-all duration-300 cursor-pointer"
                       asChild
                     >
                       <a href="https://t.me/Aiguly_arh" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
@@ -117,7 +117,7 @@ function Footerdemo() {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-10 w-10 rounded-none text-warm-black/60 hover:text-gold-accent hover:bg-warm-black/5 transition-all duration-300 cursor-pointer"
+                      className="h-10 w-10 rounded-none text-warm-black/60 hover:text-warm-black hover:bg-warm-black/5 transition-all duration-300 cursor-pointer"
                       asChild
                     >
                       <a href="https://www.facebook.com/people/artstudioSKY/100024005093884/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -138,7 +138,7 @@ function Footerdemo() {
           {/* Column 2: Navigation Links (span 2) */}
           <div className="lg:col-span-2 flex flex-col gap-6">
             <div className="text-[10px] text-warm-black/40 uppercase tracking-[0.35em] font-bold font-body flex items-center gap-2">
-              <span className="w-4 h-px bg-gold-accent/50" />
+              <span className="w-4 h-px bg-warm-black/30" />
               {t.footer.navigation}
             </div>
             <nav className="flex flex-col gap-4">
@@ -151,7 +151,7 @@ function Footerdemo() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block text-sm uppercase tracking-[0.2em] font-bold text-warm-black/60 hover:text-gold-accent transition-colors duration-300 font-body"
+                  className="block text-sm uppercase tracking-[0.2em] font-bold text-warm-black/60 hover:text-warm-black transition-colors duration-300 font-body"
                 >
                   {link.label}
                 </a>
@@ -162,18 +162,18 @@ function Footerdemo() {
           {/* Column 3: Contact Details (span 3) */}
           <div className="lg:col-span-3 flex flex-col gap-6">
             <div className="text-[10px] text-warm-black/40 uppercase tracking-[0.35em] font-bold font-body flex items-center gap-2">
-              <span className="w-4 h-px bg-gold-accent/50" />
+              <span className="w-4 h-px bg-warm-black/30" />
               {t.footer.contacts}
             </div>
             <div className="flex flex-col gap-4.5">
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <Phone className="w-3.5 h-3.5 text-gold-accent/70 stroke-[1.5]" />
+                  <Phone className="w-3.5 h-3.5 text-warm-black/50 stroke-[1.5]" />
                   <span className="text-[9px] text-warm-black/40 uppercase tracking-[0.25em] font-bold font-body">{t.footer.phone}</span>
                 </div>
                 <a
                   href="tel:+996553637901"
-                  className="text-base font-bold text-warm-black hover:text-gold-accent transition-colors duration-300 font-body tracking-wide"
+                  className="text-base font-bold text-warm-black hover:text-warm-black/70 transition-colors duration-300 font-body tracking-wide"
                 >
                   +996 (553) 63-79-01
                 </a>
@@ -181,7 +181,7 @@ function Footerdemo() {
 
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <Clock className="w-3.5 h-3.5 text-gold-accent/70 stroke-[1.5]" />
+                  <Clock className="w-3.5 h-3.5 text-warm-black/50 stroke-[1.5]" />
                   <span className="text-[9px] text-warm-black/40 uppercase tracking-[0.25em] font-bold font-body">{t.footer.hours}</span>
                 </div>
                 <p className="text-sm text-warm-black/70 font-body font-medium">{t.footer.hours_val}</p>
@@ -189,7 +189,7 @@ function Footerdemo() {
 
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <MapPin className="w-3.5 h-3.5 text-gold-accent/70 stroke-[1.5]" />
+                  <MapPin className="w-3.5 h-3.5 text-warm-black/50 stroke-[1.5]" />
                   <span className="text-[9px] text-warm-black/40 uppercase tracking-[0.25em] font-bold font-body">{t.footer.address}</span>
                 </div>
                 <p className="text-sm text-warm-black/80 font-semibold font-body leading-relaxed">
@@ -202,7 +202,7 @@ function Footerdemo() {
           {/* Column 4: 2GIS Map Widget (span 4) */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <div className="text-[10px] text-warm-black/40 uppercase tracking-[0.35em] font-bold font-body flex items-center gap-2">
-              <span className="w-4 h-px bg-gold-accent/50" />
+              <span className="w-4 h-px bg-warm-black/30" />
               {t.footer.map}
             </div>
             <div className="relative w-full h-[240px] border border-warm-black/10 overflow-hidden shadow-sm group">
@@ -211,7 +211,7 @@ function Footerdemo() {
                 href="https://2gis.kg/bishkek/firm/70000001036765142?m=74.602583%2C42.867246%2F16"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute top-3 left-3 z-10 flex items-center gap-1.5 bg-warm-black/90 hover:bg-gold-accent hover:text-warm-black text-white px-3.5 py-2 text-[9px] font-bold uppercase tracking-widest transition-all duration-300 shadow-md backdrop-blur-sm"
+                className="absolute top-3 left-3 z-10 flex items-center gap-1.5 bg-warm-black/90 hover:bg-white hover:text-warm-black text-white px-3.5 py-2 text-[9px] font-bold uppercase tracking-widest transition-all duration-300 shadow-md backdrop-blur-sm"
               >
                 <ExternalLink className="w-3 h-3" />
                 {t.footer.gis}

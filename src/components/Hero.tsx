@@ -53,7 +53,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="font-body text-[11px] md:text-[12px] font-bold tracking-[0.3em] uppercase text-gold-accent mb-2 block"
+          className="font-body text-[11px] md:text-[12px] font-bold tracking-[0.3em] uppercase text-white/50 mb-2 block"
         >
           {t.hero.subtitle}
         </motion.span>
@@ -88,7 +88,7 @@ export default function Hero() {
         >
           <a
             href="#services"
-            className="w-full sm:w-auto inline-flex items-center justify-center text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] font-bold bg-gold-accent border border-gold-accent text-white hover:bg-transparent hover:text-white transition-all duration-300 rounded-none text-center font-body py-3 px-6 sm:py-3.5 sm:px-9"
+            className="w-full sm:w-auto inline-flex items-center justify-center text-[10px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] font-bold bg-white border border-white text-warm-black hover:bg-transparent hover:text-white hover:border-white/30 transition-all duration-300 rounded-none text-center font-body py-3 px-6 sm:py-3.5 sm:px-9"
           >
             {t.hero.services}
           </a>

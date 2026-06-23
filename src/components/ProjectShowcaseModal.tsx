@@ -92,7 +92,7 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
     return (
       <>
         {/* Category Tags */}
-        <span className="text-[10px] md:text-[11px] font-bold tracking-[0.35em] uppercase text-gold-accent mb-4 font-body block project-details-tags">
+        <span className="text-[10px] md:text-[11px] font-bold tracking-[0.35em] uppercase text-white/50 mb-4 font-body block project-details-tags">
           {localProject.tags.join(" / ")}
         </span>
 
@@ -102,7 +102,7 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
         </h1>
 
         {/* Vertical Divider */}
-        <div className="w-12 h-[1px] bg-gold-accent mb-6 project-details-divider" />
+        <div className="w-12 h-[1px] bg-white/40 mb-6 project-details-divider" />
 
         {/* Detailed Description */}
         <p className="font-body text-xs lg:text-sm text-white/85 font-light leading-relaxed mb-0 max-w-md project-details-description">
@@ -138,7 +138,7 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
             {/* Close Button - top right */}
             <button
               onClick={onClose}
-              className="fixed top-4 right-4 z-[55] p-2.5 bg-black/40 hover:bg-gold-accent hover:text-warm-black text-white rounded-full border border-white/10 transition-all duration-300 backdrop-blur-md group cursor-pointer"
+              className="fixed top-4 right-4 z-[55] p-2.5 bg-black/40 hover:bg-white hover:text-warm-black text-white rounded-full border border-white/10 transition-all duration-300 backdrop-blur-md group cursor-pointer"
               aria-label="Close modal"
             >
               <X className="w-5 h-5 transition-transform duration-300 group-hover:rotate-90" />
@@ -149,7 +149,7 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
               onClick={() => setShowMobileInfo(!showMobileInfo)}
               className={`fixed top-4 left-4 z-[55] p-2.5 rounded-full border transition-all duration-300 backdrop-blur-md group cursor-pointer ${
                 showMobileInfo 
-                  ? "bg-gold-accent text-warm-black border-gold-accent" 
+                  ? "bg-white text-warm-black border-white" 
                   : "bg-black/40 text-white border-white/10 hover:bg-white/10"
               }`}
               aria-label="Toggle project info"
@@ -238,7 +238,7 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
             {/* Close Button - Pinned to the top-right of the screen and never scrolls */}
             <button
               onClick={onClose}
-              className="fixed top-8 right-8 z-50 p-3 bg-white/5 hover:bg-gold-accent hover:text-warm-black text-white rounded-none border border-white/10 transition-all duration-300 backdrop-blur-sm group cursor-pointer"
+              className="fixed top-8 right-8 z-50 p-3 bg-white/5 hover:bg-white hover:text-warm-black text-white rounded-none border border-white/10 transition-all duration-300 backdrop-blur-sm group cursor-pointer"
               aria-label="Close modal"
             >
               <X className="w-5 h-5 transition-transform duration-300 group-hover:rotate-90" />
@@ -314,7 +314,7 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
         >
           <button
             onClick={() => setFullScreenImage(null)}
-            className="absolute top-8 right-8 z-[70] p-3 bg-white/5 hover:bg-gold-accent hover:text-warm-black text-white rounded-none border border-white/10 transition-all duration-300 backdrop-blur-sm group cursor-pointer"
+            className="absolute top-8 right-8 z-[70] p-3 bg-white/5 hover:bg-white hover:text-warm-black text-white rounded-none border border-white/10 transition-all duration-300 backdrop-blur-sm group cursor-pointer"
           >
             <X className="w-6 h-6 transition-transform duration-300 group-hover:rotate-90" />
           </button>

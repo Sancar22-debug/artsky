@@ -19,7 +19,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[12px] md:text-[13px] font-bold tracking-[0.3em] uppercase text-gold-accent mb-6 md:mb-8 block font-body"
+          className="text-[12px] md:text-[13px] font-bold tracking-[0.3em] uppercase text-text-gray mb-6 md:mb-8 block font-body"
         >
           {t.about.label}
         </motion.span>

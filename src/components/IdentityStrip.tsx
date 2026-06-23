@@ -32,7 +32,7 @@ export default function IdentityStrip() {
             className="font-body text-lg sm:text-xl md:text-3xl lg:text-4xl font-extralight leading-relaxed text-white/90"
           >
             {t.identity.statement_1}
-            <span className="font-normal text-gold-accent">{t.identity.statement_confident}</span>
+            <span className="font-normal text-white">{t.identity.statement_confident}</span>
             {t.identity.statement_2}
             <span className="font-normal text-white">{t.identity.statement_functional}</span>
             {t.identity.statement_3}
@@ -54,7 +54,7 @@ export default function IdentityStrip() {
               className="px-2 py-3 sm:px-4 sm:py-4 lg:px-8 lg:py-4 border-r border-b lg:border-b-0 border-white/10 flex flex-col justify-between group hover:bg-white/[0.01] transition-colors duration-300"
             >
               {/* Technical index indicator */}
-              <span className="text-[10px] md:text-[11px] lg:text-[12px] font-mono text-white/30 mb-2 lg:mb-4 block group-hover:text-gold-accent transition-colors duration-300">
+              <span className="text-[10px] md:text-[11px] lg:text-[12px] font-mono text-white/30 mb-2 lg:mb-4 block group-hover:text-white/60 transition-colors duration-300">
                 0{index + 1}
               </span>
               
