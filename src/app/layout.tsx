@@ -22,8 +22,6 @@ export const metadata: Metadata = {
 
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 
-export const runtime = "edge";
-
 export default function RootLayout({
   children,
 }: Readonly<{
