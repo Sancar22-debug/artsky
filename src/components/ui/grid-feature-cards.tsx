@@ -27,6 +27,7 @@ export function FeatureCard({ feature, className, ...props }: FeatureCardPorps) 
 			{feature.image && (
 				<div className="absolute inset-0 z-0 opacity-40 group-hover:opacity-65 transition-opacity duration-700 ease-out pointer-events-none">
 					<div className="absolute inset-0 bg-gradient-to-t from-warm-black via-warm-black/50 to-transparent z-10" />
+					{/* eslint-disable-next-line @next/next/no-img-element */}
 					<img
 						src={feature.image}
 						alt={feature.title}

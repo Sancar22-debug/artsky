@@ -39,6 +39,7 @@ export default function ProjectShowcaseModal({ isOpen, onClose, project }: Proje
   // Keep a local copy of the project data so it remains visible during the exit animation
   useEffect(() => {
     if (project) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLocalProject(project);
       setShowMobileInfo(false);
     }

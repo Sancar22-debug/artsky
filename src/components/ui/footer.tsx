@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { MapWidget } from "@/components/ui/MapWidget";
+import Link from "next/link";
 
 interface FooterProps {
   logo: React.ReactNode
@@ -86,14 +87,14 @@ export function Footer({
             {/* Logo and Social Media links placed under the navigation */}
             <div className="flex flex-col items-end gap-6 mt-16">
               {/* Logo */}
-              <a
+              <Link
                 href="/"
                 className="flex items-center gap-x-2 block"
                 aria-label={brandName || "Art Studio Sky"}
               >
                 {logo}
                 {brandName && <span className="font-bold text-lg font-heading tracking-wider uppercase text-warm-black">{brandName}</span>}
-              </a>
+              </Link>
  
               {/* Social Media links - borderless, spaced */}
               <ul className="flex list-none gap-x-3">
