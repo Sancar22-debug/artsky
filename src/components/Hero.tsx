@@ -47,7 +47,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/10 to-warm-black/55" />
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-12 md:px-16 text-center flex flex-col items-center justify-center h-full">
+      <div className="relative z-10 max-w-5xl mx-auto px-12 md:px-16 text-center flex flex-col items-center justify-center h-full pt-6 md:pt-10">
         {/* Small Technical Label */}
         <motion.span
           initial={{ opacity: 0, y: 15 }}
@@ -101,21 +101,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Down Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.3 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
-      >
-        <span className="font-body text-[8px] uppercase tracking-[0.3em] text-white/50">{t.hero.scroll}</span>
-        <motion.div
-          animate={{ y: [0, 6, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        >
-          <ArrowDown className="w-4 h-4 text-white/50 stroke-[1.5]" />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

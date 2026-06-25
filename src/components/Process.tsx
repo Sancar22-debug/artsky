@@ -62,7 +62,7 @@ export default function Process() {
                   {/* Step Layout */}
                   <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
                     {/* Big Serif Number */}
-                    <div className="font-serif text-6xl md:text-7xl lg:text-8xl font-light text-white/10 leading-none select-none md:-mt-2 w-20">
+                    <div className="font-serif text-6xl md:text-7xl lg:text-8xl font-light text-white leading-none select-none md:-mt-2 w-20">
                       {step.num}
                     </div>
 

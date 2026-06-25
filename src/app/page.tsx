@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Process from "@/components/Process";
+import YouTubeSection from "@/components/YouTubeSection";
 import { Footerdemo } from "@/components/ui/footer-section";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <Projects />
       <Process />
+      <YouTubeSection />
       <Footerdemo />
     </>
   );

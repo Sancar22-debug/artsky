@@ -10,7 +10,7 @@ export const translations = {
     hero: {
       subtitle: "Art Studio Sky · Architecture & Interior",
       title_1: "Архитектура и дизайн",
-      title_2: "пространств под ключ",
+      title_2: "пространств по всему миру",
       desc: "Проектируем и реализуем жилые и коммерческие объекты: от идеи, планировки и 3D-визуализации до рабочей документации, подбора материалов и авторского надзора.",
       services: "Наши Услуги",
       projects: "Наши Работы",
@@ -33,7 +33,13 @@ export const translations = {
       label: "О СТУДИИ",
       title: "ARTSKY архитектурная студия с полным подходом к пространству",
       desc_1: "Art Studio Sky — архитектурно-дизайнерская студия в Бишкеке, которая работает с жилыми и коммерческими объектами. Студия объединяет архитектуру, интерьер, экстерьер, ландшафт, 3D-визуализацию, проектную документацию и авторский надзор.",
-      desc_2: "Главная идея студии — создавать не просто красивую картинку, а цельное пространство, где форма, функция, материалы, свет и детали работают вместе."
+      desc_2: "Главная идея студии — создавать не просто красивую картинку, а цельное пространство, где форма, функция, материалы, свет и детали работают вместе.",
+      benefits: [
+        "Опыт компании более 8 лет",
+        "Лицензия 2-го уровня",
+        "Качественная 3D визуализация",
+        "Проектирование жилых домов с учетом дизайна"
+      ]
     },
     services: {
       label: "НАШИ УСЛУГИ",
@@ -57,7 +63,7 @@ export const translations = {
           description: "Разработка фасадных решений, подбор материалов отделки, оформление входных групп и создание целостного облика здания."
         },
         {
-          title: "Ландшафтный дизайн",
+          title: "Разработка генплана и ландшафтный дизайн",
           description: "Планирование и благоустройство прилегающей территории: зонирование, озеленение, создание малых форм и сценариев освещения."
         },
         {
@@ -66,7 +72,7 @@ export const translations = {
         },
         {
           title: "Сопровождение документации",
-          description: "Разработка рабочей документации, согласование инженерных разделов и помощь в подготовке документов для реализации проекта."
+          description: "Разработка рабочей документации, согласование инженерных разделов, помощь в подготовке документов для реализации проекта, а также сопровождение в Гос органах, в архитектуре и экспертизе."
         },
         {
           title: "Сотрудничество со строительными компаниями",
@@ -428,6 +434,10 @@ export const translations = {
       map: "Офис на карте",
       gis: "Открыть в 2ГИС",
       copyright: "© 2018 Art Studio Sky."
+    },
+    youtube: {
+      title: "Перейти на youtube канал",
+      button: "YouTube"
     }
   },
   en: {
@@ -441,7 +451,7 @@ export const translations = {
     hero: {
       subtitle: "Art Studio Sky · Architecture & Interior",
       title_1: "Turnkey Architecture",
-      title_2: "& space design",
+      title_2: "& space design worldwide",
       desc: "We design and realize residential and commercial properties: from initial idea, layout, and 3D visualization to working documentation, material selection, and site supervision.",
       services: "Our Services",
       projects: "Our Projects",
@@ -464,7 +474,13 @@ export const translations = {
       label: "ABOUT US",
       title: "ARTSKY: Architectural studio with a complete approach to space",
       desc_1: "Art Studio Sky is an architecture and design studio in Bishkek, working with residential and commercial properties. The studio integrates architecture, interior, exterior, landscape, 3D visualization, project documentation, and site supervision.",
-      desc_2: "The studio's core philosophy is to create not just a beautiful picture, but a unified space where form, function, materials, lighting, and details work in harmony."
+      desc_2: "The studio's core philosophy is to create not just a beautiful picture, but a unified space where form, function, materials, lighting, and details work in harmony.",
+      benefits: [
+        "Over 8 years of experience",
+        "Level 2 License",
+        "High-quality 3D visualization",
+        "Designing residential houses with design in mind"
+      ]
     },
     services: {
       label: "OUR SERVICES",
@@ -488,7 +504,7 @@ export const translations = {
           description: "Development of facade designs, selection of finishing materials, entrance styling, and crafting a cohesive building exterior."
         },
         {
-          title: "Landscape Design",
+          title: "Master Plan & Landscape Design",
           description: "Planning and landscaping of the surrounding territory: zoning, greening, hardscaping, and outdoor lighting scenarios."
         },
         {
@@ -497,7 +513,7 @@ export const translations = {
         },
         {
           title: "Documentation Support",
-          description: "Development of working documentation, coordination of engineering sections, and assistance in preparing documents for project implementation."
+          description: "Development of working documentation, coordination of engineering sections, assistance in preparing documents for project implementation, as well as support in state bodies, architecture, and expertise."
         },
         {
           title: "Partnerships with Contractors",
@@ -855,10 +871,14 @@ export const translations = {
       hours: "Working Hours",
       hours_val: "Mon — Sat: 09:00 - 18:00",
       address: "Address",
-      address_val: "115 Bokonbaev St, Bishkek",
-      map: "Office on Map",
+      address_val: "Bishkek, 115 Bokonbaev St",
+      map: "Office on map",
       gis: "Open in 2GIS",
       copyright: "© 2018 Art Studio Sky."
+    },
+    youtube: {
+      title: "Go to youtube channel",
+      button: "YouTube"
     }
   }
 } as const;

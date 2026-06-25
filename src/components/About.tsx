@@ -40,7 +40,7 @@ export default function About() {
             </motion.h2>
           </div>
           
-          {/* Right Side: Description Texts */}
+          {/* Right Side: Description Texts and Benefits */}
           <div className="lg:col-span-7 flex flex-col justify-start space-y-6">
             <motion.p 
               initial={{ opacity: 0, y: 15 }}
@@ -61,6 +61,26 @@ export default function About() {
             >
               {t.about.desc_2}
             </motion.p>
+
+            {/* Benefits List */}
+            {t.about.benefits && (
+              <motion.ul 
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ delay: 0.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                className="mt-6 space-y-3"
+              >
+                {t.about.benefits.map((benefit: string, index: number) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <svg className="w-6 h-6 text-[#725a3d] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="font-body text-base md:text-lg text-text-gray">{benefit}</span>
+                  </li>
+                ))}
+              </motion.ul>
+            )}
           </div>
         </div>
       </div>
