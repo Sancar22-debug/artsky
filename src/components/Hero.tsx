@@ -47,7 +47,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/10 to-warm-black/55" />
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-12 md:px-16 text-center flex flex-col items-center justify-center h-full pt-6 md:pt-10">
+      <div className="relative z-10 max-w-5xl mx-auto px-12 md:px-16 text-center flex flex-col items-center justify-center h-full">
         {/* Small Technical Label */}
         <motion.span
           initial={{ opacity: 0, y: 15 }}
