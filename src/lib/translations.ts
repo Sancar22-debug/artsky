@@ -38,7 +38,7 @@ export const translations = {
         "Опыт компании более 8 лет",
         "Лицензия 2-го уровня",
         "Качественная 3D визуализация",
-        "Проектирование жилых домов с учетом дизайна"
+        "Проектирование жилых, коммерческих и многоэтажных зданий с учетом дизайна"
       ]
     },
     services: {
@@ -438,6 +438,10 @@ export const translations = {
     youtube: {
       title: "Перейти на youtube канал",
       button: "YouTube"
+    },
+    whatsapp_popup: {
+      title: "Art Studio Sky",
+      desc: "Здравствуйте! Мы — команда Art Studio Sky. Если у Вас появятся вопросы, мы готовы помочь вам. Напишите нам, и мы ответим в самое ближайшее время."
     }
   },
   en: {
@@ -479,7 +483,7 @@ export const translations = {
         "Over 8 years of experience",
         "Level 2 License",
         "High-quality 3D visualization",
-        "Designing residential houses with design in mind"
+        "Designing residential, commercial, and multi-story buildings with design in mind"
       ]
     },
     services: {
@@ -879,6 +883,10 @@ export const translations = {
     youtube: {
       title: "Go to youtube channel",
       button: "YouTube"
+    },
+    whatsapp_popup: {
+      title: "Art Studio Sky",
+      desc: "Hello! We are the Art Studio Sky team. If you have any questions, we are ready to help. Write to us, and we will answer you as soon as possible."
     }
   }
 } as const;

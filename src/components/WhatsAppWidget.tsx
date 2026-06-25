@@ -3,8 +3,10 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function WhatsAppWidget() {
+  const { t } = useLanguage();
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -34,9 +36,9 @@ export default function WhatsAppWidget() {
               <X size={16} />
             </button>
             <div className="text-warm-black">
-              <h4 className="font-bold font-body text-sm mb-1">Айгуль Искакова</h4>
+              <h4 className="font-bold font-body text-sm mb-1">{t.whatsapp_popup?.title || "Art Studio Sky"}</h4>
               <p className="font-body text-xs text-text-gray leading-relaxed">
-                Здравствуйте! Меня зовут Айгуль, если у Вас появятся вопросы, я готова помочь вам. Напишите мне и я отвечу вам в самое ближайшее время.
+                {t.whatsapp_popup?.desc || "Здравствуйте! Мы — компания Art Studio Sky, если у Вас появятся вопросы, мы готовы помочь вам. Напишите нам и мы ответим вам в самое ближайшее время."}
               </p>
             </div>
             {/* Tail */}
