@@ -53,7 +53,7 @@ export default function WhatsAppWidget() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
-          href="https://wa.me/996553637901"
+          href="https://wa.me/996553637901?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-11 h-11 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 transition-transform duration-300"
